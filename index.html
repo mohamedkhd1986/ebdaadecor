@@ -1,0 +1,3056 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0B192C" />
+  <title>مكتب إبداع للتشطيبات والديكور | إدارة / أبو إياد - 01090408223</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+          },
+          colors: {
+            navy: {
+              950: '#060F1D',
+              900: '#0B192C',
+              800: '#132A4F',
+              700: '#1C3B6E',
+            },
+            gold: {
+              200: '#F3E5AB',
+              300: '#E6C975',
+              400: '#D4AF37',
+              500: '#B89225',
+            },
+            olive: {
+              400: '#AED043',
+              500: '#9AB838',
+              600: '#7E9928',
+            },
+            cream: {
+              50: '#FCFBF7',
+              100: '#F6F1E7',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * {
+      font-family: 'Cairo', sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0B192C;
+      color: #FCFBF7;
+      overflow-x: hidden;
+    }
+
+    /* Poster-inspired Geometric Split Background & Gold Frames */
+    .poster-split-bg {
+      background: linear-gradient(90deg, #132A4F 0%, #132A4F 42%, #0B192C 42%, #0B192C 100%);
+    }
+
+    @media (max-width: 1024px) {
+      .poster-split-bg {
+        background: linear-gradient(180deg, #0B192C 0%, #132A4F 100%);
+      }
+    }
+
+    .gold-double-frame {
+      border: 2px solid #D4AF37;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45), inset 0 0 20px rgba(212, 175, 55, 0.12);
+    }
+
+    .gold-gradient-btn {
+      background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #B89225 100%);
+      color: #060F1D;
+    }
+
+    .olive-gradient-btn {
+      background: linear-gradient(135deg, #AED043 0%, #9AB838 60%, #7E9928 100%);
+      color: #060F1D;
+    }
+
+    .navy-glass-card {
+      background: rgba(11, 25, 44, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1.5px solid rgba(212, 175, 55, 0.55);
+    }
+
+    /* Custom Range Sliders */
+    input[type=range] {
+      -webkit-appearance: none;
+      appearance: none;
+      background: transparent;
+      cursor: pointer;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+      background: #1C3B6E;
+      height: 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(212, 175, 55, 0.45);
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      margin-top: -6px;
+      background: #9AB838;
+      height: 22px;
+      width: 22px;
+      border-radius: 50%;
+      border: 2px solid #FCFBF7;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+      transition: transform 0.15s ease;
+    }
+    input[type=range]::-webkit-slider-thumb:hover {
+      transform: scale(1.15);
+    }
+
+    /* Print Quotation Styles */
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #printableQuotationArea, #printableQuotationArea * {
+        visibility: visible;
+      }
+      #printableQuotationArea {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: #0B192C !important;
+        color: #ffffff !important;
+        padding: 24px !important;
+        border: 2px solid #D4AF37 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="selection:bg-olive-500 selection:text-navy-950">
+
+  <!-- ========================================================= -->
+  <!-- TOP ANNOUNCEMENT BAR                                      -->
+  <!-- ========================================================= -->
+  <div class="bg-navy-950 border-b border-gold-400/25 py-2 px-4 text-xs no-print">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 text-gold-200 font-semibold">
+        <span class="w-2 h-2 rounded-full bg-olive-500 animate-ping"></span>
+        <span>مكتب إبداع للتشطيبات والديكور الداخلي — بإشراف مباشر من <b class="text-olive-400">إدارة / أبو إياد</b></span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:01090408223" class="office-phone-link hover:text-gold-300 transition flex items-center gap-1.5 font-bold">
+          <i class="fa-solid fa-phone-volume text-olive-400"></i>
+          <span dir="ltr" class="office-phone-text">01090408223</span>
+        </a>
+        <span class="text-white/20">|</span>
+        <button onclick="openAdminPanel()" class="text-gold-300 hover:text-olive-400 font-extrabold flex items-center gap-1 transition">
+          <i class="fa-solid fa-lock text-[11px]"></i>
+          <span>دخول الإدارة</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- 1. STICKY TOP HEADER / NAVBAR                             -->
+  <!-- ========================================================= -->
+  <header class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur-md border-b border-gold-400/35 shadow-xl no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo (Exact SVG Recreation of Poster Logo) -->
+      <a href="#home" class="flex items-center gap-3.5 group shrink-0">
+        <div class="w-14 h-14 rounded-2xl bg-navy-800 border-2 border-gold-400/80 flex items-center justify-center p-1.5 shadow-lg group-hover:scale-105 transition">
+          <svg viewBox="0 0 100 100" class="w-12 h-12" aria-label="شعار مكتب إبداع للتشطيبات والديكور">
+            <!-- Chimney -->
+            <path d="M26 32 L26 18 L35 18 L35 24" fill="none" stroke="#D4AF37" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Golden House Roof -->
+            <path d="M9 43 L50 12 L91 43" fill="none" stroke="#D4AF37" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Golden House Walls & Floor -->
+            <path d="M19 36 L19 84 L62 84" fill="none" stroke="#D4AF37" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M81 36 L81 84 L69 84" fill="none" stroke="#D4AF37" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Table Lamp on Top of Cabinet -->
+            <polygon points="44,23 56,23 59,33 41,33" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linejoin="round"/>
+            <line x1="50" y1="33" x2="50" y2="43" stroke="#FFFFFF" stroke-width="2.2"/>
+            <line x1="44" y1="43" x2="56" y2="43" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+            <!-- Olive & White Two-Drawer Chest / Cabinet -->
+            <rect x="30" y="44" width="40" height="4" rx="1" fill="#9AB838" stroke="#FFFFFF" stroke-width="2"/>
+            <rect x="32" y="48" width="36" height="31" fill="#132A4F" stroke="#FFFFFF" stroke-width="2.2"/>
+            <!-- Top Drawer with Circular Handle -->
+            <rect x="35" y="51" width="30" height="11" fill="#9AB838" fill-opacity="0.25" stroke="#FFFFFF" stroke-width="1.8"/>
+            <circle cx="50" cy="56.5" r="2" fill="#D4AF37"/>
+            <!-- Bottom Drawer with Circular Handle -->
+            <rect x="35" y="65" width="30" height="11" fill="#9AB838" fill-opacity="0.25" stroke="#FFFFFF" stroke-width="1.8"/>
+            <circle cx="50" cy="70.5" r="2" fill="#D4AF37"/>
+            <!-- Cabinet Legs -->
+            <path d="M33 79 L33 84 L37 84 L37 79" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+            <path d="M63 79 L63 84 L67 84 L67 79" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-2xl font-black text-olive-500 tracking-wide">مكتب إبداع</span>
+            <span class="hidden sm:inline-block text-[11px] px-2.5 py-0.5 rounded-full bg-gold-400/15 text-gold-200 border border-gold-400/40 font-bold">
+              إدارة / أبو إياد
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm text-white font-semibold">للتشطيبات والديكور</p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden xl:flex items-center gap-1 text-sm font-bold">
+        <a href="#home" class="px-3 py-2 rounded-xl text-olive-400 bg-white/5 hover:bg-white/10 transition">الرئيسية</a>
+        <a href="#services" class="px-3 py-2 rounded-xl text-gray-200 hover:text-olive-400 hover:bg-white/5 transition">خدماتنا</a>
+        <a href="#simulator" class="px-3 py-2 rounded-xl text-gray-200 hover:text-olive-400 hover:bg-white/5 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-palette text-gold-400 text-xs"></i>
+          <span>محاكي الديكور</span>
+        </a>
+        <a href="#calculator" class="px-3 py-2 rounded-xl text-gray-200 hover:text-olive-400 hover:bg-white/5 transition">حاسبة التكلفة</a>
+        <a href="#portfolio" class="px-3 py-2 rounded-xl text-gray-200 hover:text-olive-400 hover:bg-white/5 transition">أعمالنا (قبل/بعد)</a>
+        <a href="#tracker" class="px-3 py-2 rounded-xl text-gray-200 hover:text-olive-400 hover:bg-white/5 transition">متابعة مشروعك</a>
+        <a href="#booking" class="px-3 py-2 rounded-xl text-gray-200 hover:text-olive-400 hover:bg-white/5 transition">احجز معاينة</a>
+      </nav>
+
+      <!-- Direct CTA Buttons + Prominent Admin Panel Button -->
+      <div class="hidden md:flex items-center gap-2 shrink-0">
+        <button onclick="openAdminPanel()" class="px-4 py-2.5 rounded-xl gold-gradient-btn font-black text-xs flex items-center gap-2 shadow-lg hover:scale-105 transition border border-white/40">
+          <i class="fa-solid fa-user-shield text-sm"></i>
+          <span>لوحة الإدارة 🔒</span>
+          <span id="navBookingBadge" class="px-1.5 py-0.5 rounded-full bg-navy-950 text-gold-300 text-[10px] font-extrabold">2</span>
+        </button>
+        <a href="tel:01090408223" class="office-phone-link px-3.5 py-2.5 rounded-xl bg-navy-800 hover:bg-navy-700 border border-gold-400/60 text-white font-extrabold text-xs flex items-center gap-2 transition shadow">
+          <span class="w-5 h-5 rounded-full bg-white text-navy-900 flex items-center justify-center">
+            <i class="fa-solid fa-phone text-[10px]"></i>
+          </span>
+          <span dir="ltr" class="office-phone-text tracking-wider text-xs">01090408223</span>
+        </a>
+        <a href="https://wa.me/201090408223" target="_blank" rel="noopener noreferrer"
+           class="office-wa-link px-3.5 py-2.5 rounded-xl olive-gradient-btn font-black text-xs flex items-center gap-1.5 shadow-lg hover:opacity-95 transition">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>واتساب</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu & Admin Trigger -->
+      <div class="flex xl:hidden items-center gap-2">
+        <button onclick="openAdminPanel()" class="md:hidden px-3 py-2 rounded-xl gold-gradient-btn font-black text-xs flex items-center gap-1.5 shadow">
+          <i class="fa-solid fa-lock"></i>
+          <span>الإدارة</span>
+        </button>
+        <button onclick="toggleMobileMenu()" class="w-11 h-11 rounded-xl bg-navy-800 border border-gold-400/50 text-gold-300 flex items-center justify-center text-lg">
+          <i id="mobileMenuIcon" class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobileMenuDrawer" class="hidden xl:hidden bg-navy-950 border-b border-gold-400/40 px-4 pt-3 pb-5 space-y-2">
+      <div class="grid grid-cols-2 gap-2 text-xs font-bold">
+        <a onclick="toggleMobileMenu()" href="#home" class="p-2.5 rounded-xl bg-navy-800 text-olive-400">الرئيسية</a>
+        <a onclick="toggleMobileMenu()" href="#services" class="p-2.5 rounded-xl bg-navy-900 text-gray-200">خدماتنا المتكاملة</a>
+        <a onclick="toggleMobileMenu()" href="#simulator" class="p-2.5 rounded-xl bg-navy-900 text-gold-200">محاكي الديكور والألوان</a>
+        <a onclick="toggleMobileMenu()" href="#calculator" class="p-2.5 rounded-xl bg-navy-900 text-gray-200">حاسبة تكلفة التشطيب</a>
+        <a onclick="toggleMobileMenu()" href="#portfolio" class="p-2.5 rounded-xl bg-navy-900 text-gray-200">أعمالنا (قبل / بعد)</a>
+        <a onclick="toggleMobileMenu()" href="#tracker" class="p-2.5 rounded-xl bg-navy-900 text-gray-200">متابعة مشروعك</a>
+        <button onclick="toggleMobileMenu(); openAdminPanel();" class="col-span-2 p-3 rounded-xl gold-gradient-btn text-center font-black flex items-center justify-center gap-2">
+          <i class="fa-solid fa-user-shield"></i>
+          <span>فتح لوحة التحكم الإدارية (تعديل الأسعار والمشاريع) 🔒</span>
+        </button>
+      </div>
+      <div class="flex gap-2 pt-2">
+        <a href="tel:01090408223" class="office-phone-link flex-1 py-2.5 rounded-xl bg-navy-800 border border-gold-400/50 text-center text-xs font-bold">
+          <i class="fa-solid fa-phone text-gold-400 ml-1"></i> اتصال: <span class="office-phone-text">01090408223</span>
+        </a>
+        <a href="https://wa.me/201090408223" target="_blank" rel="noopener noreferrer" class="office-wa-link flex-1 py-2.5 rounded-xl olive-gradient-btn text-center text-xs font-black">
+          <i class="fa-brands fa-whatsapp ml-1"></i> واتساب أبو إياد
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================= -->
+  <!-- 2. HERO SECTION (INSPIRED BY OFFICIAL POSTER LAYOUT)      -->
+  <!-- ========================================================= -->
+  <section id="home" class="poster-split-bg relative py-10 lg:py-16 overflow-hidden border-b border-gold-400/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+
+        <!-- Right Column (Text, Poster Gold Frame, Management & CTA) -->
+        <div class="lg:col-span-5 space-y-6 z-10">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-800/90 border border-gold-400/50 text-xs font-bold text-gold-200 shadow">
+            <i class="fa-solid fa-award text-olive-400"></i>
+            <span>من الطوب الأحمر إلى تسليم المفتاح بأعلى معايير الجودة</span>
+          </div>
+
+          <!-- Poster Framed Headline Box -->
+          <div class="relative p-6 sm:p-8 rounded-2xl navy-glass-card gold-double-frame space-y-4">
+            <!-- Decorative Corner Accents -->
+            <div class="absolute -top-2 -right-2 w-8 h-8 border-t-4 border-r-4 border-gold-300"></div>
+            <div class="absolute -bottom-2 -left-2 w-8 h-8 border-b-4 border-l-4 border-gold-300"></div>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight text-white">
+              أحدث وأرقى
+              <span class="block text-gold-200 mt-1">الديكورات الداخلية</span>
+              <span class="block text-olive-400 text-2xl sm:text-3xl mt-2">وبأسعار تنافسية</span>
+            </h1>
+
+            <p class="text-sm sm:text-base text-gray-200 leading-relaxed">
+              في <b class="text-olive-400">مكتب إبداع للتشطيبات والديكور</b> نحول رؤيتك إلى واقع ملموس. نقدم حلول تشطيب هندسية متكاملة للشقق والفيلات والمكاتب بخامات أصلية مضمونة وجدول زمني دقيق تحت إشراف <b class="text-gold-300">إدارة / أبو إياد</b>.
+            </p>
+
+            <!-- Poster Contact Signature Block -->
+            <div class="pt-4 border-t border-gold-400/30 flex flex-wrap items-center justify-between gap-4">
+              <div class="flex items-center gap-3">
+                <a href="tel:01090408223" class="w-12 h-12 rounded-full bg-white text-navy-900 flex items-center justify-center text-xl shadow-lg hover:scale-105 transition">
+                  <i class="fa-solid fa-phone-volume"></i>
+                </a>
+                <div>
+                  <span class="text-xs text-gold-200 block">تواصل معنا لمزيد من التفاصيل:</span>
+                  <a href="tel:01090408223" dir="ltr" class="text-xl sm:text-2xl font-black tracking-widest text-white hover:text-olive-400 transition">
+                    01090408223
+                  </a>
+                </div>
+              </div>
+              <div class="px-4 py-1.5 rounded-xl bg-navy-950 border border-gold-400/40">
+                <span class="text-base sm:text-lg font-black text-olive-400">إدارة / أبو إياد</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="#calculator" class="flex-1 sm:flex-initial px-5 py-3.5 rounded-2xl gold-gradient-btn font-black text-xs sm:text-sm shadow-xl hover:scale-[1.02] transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-calculator"></i>
+              <span>احسب مقايسة شقتك</span>
+            </a>
+            <a href="#simulator" class="flex-1 sm:flex-initial px-4 py-3.5 rounded-2xl bg-navy-800 hover:bg-navy-700 border border-gold-400/60 text-white font-bold text-xs sm:text-sm transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-wand-magic-sparkles text-olive-400"></i>
+              <span>محاكي الألوان</span>
+            </a>
+            <button onclick="openAdminPanel()" class="w-full sm:w-auto px-4 py-3 rounded-2xl bg-navy-950/90 hover:bg-navy-900 border border-olive-400/60 text-olive-400 font-extrabold text-xs transition flex items-center justify-center gap-2 shadow">
+              <i class="fa-solid fa-sliders"></i>
+              <span>لوحة الإدارة وتعديل الأسعار 🔒</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Left Column (Poster Living Room Scene Inside Overlapping Double Gold Frame) -->
+        <div class="lg:col-span-7 relative">
+          <!-- Outer Offset Gold Frame (Matches Poster's Left Gold Border) -->
+          <div class="relative mx-auto max-w-2xl p-3 sm:p-5 rounded-3xl border-2 border-gold-400 bg-navy-950/60 shadow-2xl">
+            
+            <!-- Top-left Decorative Gold Frame Extension -->
+            <div class="hidden sm:block absolute -top-4 -left-4 w-48 h-48 border-t-2 border-l-2 border-gold-300/70 pointer-events-none"></div>
+            <div class="hidden sm:block absolute -bottom-4 -right-4 w-48 h-48 border-b-2 border-r-2 border-gold-300/70 pointer-events-none"></div>
+
+            <!-- Interactive Living Room Illustration (Exact Recreation of Poster Photo) -->
+            <div class="relative rounded-2xl overflow-hidden border border-gold-400/50 shadow-2xl">
+              <svg id="heroRoomSvg" viewBox="0 0 600 390" class="w-full h-auto block">
+                <defs>
+                  <linearGradient id="heroCoveLed" x1="0" y1="0" x2="0" y2="1">
+                    <stop id="heroLedStop1" offset="0%" stop-color="#FFCF70" stop-opacity="0.95"/>
+                    <stop id="heroLedStop2" offset="50%" stop-color="#FFEBB8" stop-opacity="0.35"/>
+                    <stop offset="100%" stop-color="#F4EFE6" stop-opacity="0"/>
+                  </linearGradient>
+                  <radialGradient id="heroWinLight" cx="50%" cy="50%" r="50%">
+                    <stop id="heroWinStop1" offset="0%" stop-color="#FFFFFF"/>
+                    <stop id="heroWinStop2" offset="85%" stop-color="#FFF5D6"/>
+                    <stop offset="100%" stop-color="#E2D2B5"/>
+                  </radialGradient>
+                </defs>
+
+                <!-- Main Feature Wall behind Circular Window -->
+                <rect id="heroWallRect" x="185" y="26" width="415" height="240" fill="#F3EEE6" class="transition-colors duration-500"/>
+
+                <!-- Ceiling & Recessed Cove Lighting -->
+                <rect x="0" y="0" width="600" height="26" fill="#E5DEC9"/>
+                <rect x="185" y="26" width="415" height="55" fill="url(#heroCoveLed)"/>
+                <line id="heroCeilingLedLine" x1="185" y1="26" x2="600" y2="26" stroke="#FFBE42" stroke-width="5"/>
+
+                <!-- Built-in Wooden Shelving Unit on Left (From Poster) -->
+                <rect x="0" y="22" width="188" height="250" fill="#C5B097" stroke="#9E876D" stroke-width="3"/>
+                <!-- Shelf Recesses -->
+                <rect x="14" y="32" width="160" height="52" fill="#E3D9CE"/>
+                <rect x="14" y="92" width="160" height="72" fill="#E3D9CE"/>
+                <rect x="14" y="172" width="160" height="52" fill="#E3D9CE"/>
+                <rect x="14" y="230" width="160" height="36" fill="#D5C7B8"/>
+
+                <!-- Decorative Objects on Shelves (Picture Frame, Black Vases, Potted Plants) -->
+                <!-- Shelf 1 items -->
+                <circle cx="55" cy="70" r="10" fill="#FFFFFF" stroke="#D6D3D1"/>
+                <rect x="115" y="45" width="16" height="36" rx="6" fill="#4A7C2C"/>
+                <rect x="113" y="68" width="20" height="15" rx="2" fill="#FFFFFF"/>
+                <!-- Shelf 2 items (White Frame + Tall Dark Vases) -->
+                <rect x="30" y="104" width="48" height="56" fill="#FAF8F5" stroke="#6E6256" stroke-width="3"/>
+                <path d="M132 162 C126 130, 146 130, 140 162 Z" fill="#26211E"/>
+                <path d="M152 162 C145 118, 167 118, 160 162 Z" fill="#3B332E"/>
+                <circle cx="95" cy="148" r="9" fill="#4A7C2C"/>
+                <rect x="90" y="153" width="10" height="10" fill="#D6D3D1"/>
+
+                <!-- Iconic Circular Black-Framed Grid Window (Center-Right of Poster) -->
+                <circle cx="435" cy="122" r="68" fill="url(#heroWinLight)" stroke="#1C1917" stroke-width="8"/>
+                <!-- Grid Mullions inside Circular Window -->
+                <line x1="405" y1="60" x2="405" y2="184" stroke="#1C1917" stroke-width="3"/>
+                <line x1="435" y1="54" x2="435" y2="190" stroke="#1C1917" stroke-width="3"/>
+                <line x1="465" y1="60" x2="465" y2="184" stroke="#1C1917" stroke-width="3"/>
+                <line x1="373" y1="95" x2="497" y2="95" stroke="#1C1917" stroke-width="3"/>
+                <line x1="367" y1="122" x2="503" y2="122" stroke="#1C1917" stroke-width="3"/>
+                <line x1="373" y1="149" x2="497" y2="149" stroke="#1C1917" stroke-width="3"/>
+
+                <!-- Warm Wood Paneling Behind Sofa + Lower LED Strip -->
+                <rect id="heroWoodPanel" x="215" y="196" width="385" height="72" fill="#B89772" stroke="#9A7B56" stroke-width="1.5"/>
+                <line id="heroSofaLedLine" x1="215" y1="196" x2="600" y2="196" stroke="#FFD27D" stroke-width="4"/>
+
+                <!-- Hardwood Parquet Floor -->
+                <polygon id="heroFloorPoly" points="0,268 600,268 600,390 0,390" fill="#C8B094"/>
+                <!-- Woven Grey/Taupe Area Rug -->
+                <polygon points="180,305 585,305 600,385 145,385" fill="#7D7268" opacity="0.9"/>
+
+                <!-- White 2-Drawer Nightstand & Table Lamp Next to Sofa -->
+                <rect x="180" y="222" width="58" height="58" rx="3" fill="#F5F5F4" stroke="#D6D3D1" stroke-width="1.5"/>
+                <line x1="185" y1="250" x2="233" y2="250" stroke="#A8A29E" stroke-width="2"/>
+                <!-- Table Lamp -->
+                <polygon points="198,176 222,176 227,196 193,196" fill="#FFFBEB" stroke="#D97706" stroke-width="1.5"/>
+                <line x1="210" y1="196" x2="210" y2="222" stroke="#292524" stroke-width="3"/>
+                <!-- Small Potted Green Plant on Nightstand -->
+                <circle cx="192" cy="210" r="10" fill="#4D7C2B"/>
+                <rect x="187" y="215" width="10" height="8" rx="2" fill="#FFFFFF"/>
+
+                <!-- Modern Beige L-Sofa -->
+                <g>
+                  <rect x="245" y="212" width="295" height="78" rx="8" fill="#D9CFC3" stroke="#BFB2A3" stroke-width="2"/>
+                  <rect x="260" y="200" width="125" height="46" rx="6" fill="#E6DED5" stroke="#C8BCB0" stroke-width="1.5"/>
+                  <rect x="392" y="200" width="125" height="46" rx="6" fill="#E6DED5" stroke="#C8BCB0" stroke-width="1.5"/>
+                  <!-- Plush Throw Pillows -->
+                  <polygon points="262,212 310,202 318,244 270,248" fill="#F7F4EF" stroke="#D6CFC7"/>
+                  <rect x="255" y="244" width="270" height="26" rx="4" fill="#CFC3B4"/>
+                </g>
+
+                <!-- Foreground Designer Armchair (Bottom Left of Room in Poster) -->
+                <g>
+                  <path d="M55 245 Q55 224 78 224 L165 235 Q185 238 185 260 L185 318 L55 318 Z" fill="#D5C5B3" stroke="#B8A590" stroke-width="2"/>
+                  <polygon points="75,228 122,220 132,268 82,270" fill="#F2EDE7"/>
+                  <!-- Wooden Armchair Legs -->
+                  <line x1="68" y1="318" x2="64" y2="346" stroke="#9C8267" stroke-width="6" stroke-linecap="round"/>
+                  <line x1="172" y1="318" x2="172" y2="346" stroke="#9C8267" stroke-width="6" stroke-linecap="round"/>
+                </g>
+
+                <!-- Low Wooden Coffee Table & Minimalist White Vase with Branches -->
+                <rect x="295" y="298" width="195" height="22" rx="3" fill="#B08D67" stroke="#8C6D4B" stroke-width="1.5"/>
+                <line x1="312" y1="320" x2="312" y2="345" stroke="#785C3D" stroke-width="5"/>
+                <line x1="472" y1="320" x2="472" y2="345" stroke="#785C3D" stroke-width="5"/>
+                <!-- White Ceramic Vase -->
+                <path d="M352 300 C346 270, 372 270, 366 300 Z" fill="#FFFFFF" stroke="#D6D3D1" stroke-width="1.5"/>
+                <path d="M359 272 L350 245 M359 272 L368 242 M359 272 L359 248" stroke="#44403C" stroke-width="1.5"/>
+              </svg>
+
+              <!-- Quick Interactive Bar inside Hero Image -->
+              <div class="absolute bottom-3 inset-x-3 bg-navy-950/90 backdrop-blur-md border border-gold-400/50 rounded-xl px-3.5 py-2 flex flex-wrap items-center justify-between gap-2 text-xs">
+                <div class="flex items-center gap-2">
+                  <span class="text-gold-200 font-bold"><i class="fa-solid fa-eye text-olive-400 ml-1"></i>معاينة فورية للغرفة:</span>
+                  <button onclick="quickHeroPreview('#F3EEE6', 'warm')" class="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white font-semibold transition">التصميم الأصلي</button>
+                  <button onclick="quickHeroPreview('#CBD5E1', 'daylight')" class="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-sky-200 font-semibold transition">مودرن رمادي</button>
+                  <button onclick="quickHeroPreview('#1E293B', 'warm')" class="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-gold-300 font-semibold transition">كحلي ملكي</button>
+                </div>
+                <a href="#simulator" class="text-olive-400 hover:underline font-extrabold flex items-center gap-1">
+                  <span>فتح الاستوديو الكامل</span>
+                  <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Painter's Palette Floating Badge (Recreated from Poster Bottom-Left) -->
+            <div class="hidden sm:flex items-center gap-3 absolute -bottom-6 left-6 bg-navy-900 border-2 border-gold-400 rounded-2xl px-4 py-2.5 shadow-2xl">
+              <svg viewBox="0 0 80 80" class="w-12 h-12 shrink-0">
+                <!-- Brushes behind palette -->
+                <line x1="15" y1="65" x2="65" y2="12" stroke="#9A3412" stroke-width="4" stroke-linecap="round"/>
+                <polygon points="62,15 70,7 66,19" fill="#3B82F6"/>
+                <line x1="10" y1="48" x2="68" y2="28" stroke="#1E293B" stroke-width="3.5" stroke-linecap="round"/>
+                <polygon points="65,29 74,25 68,33" fill="#EF4444"/>
+                <!-- Wooden Palette Shape -->
+                <path d="M18 42 C12 22, 42 12, 58 24 C72 35, 68 62, 46 66 C34 68, 30 56, 24 56 C18 56, 22 50, 18 42 Z" fill="#D9A066" stroke="#8C5A2B" stroke-width="2"/>
+                <circle cx="28" cy="48" r="4.5" fill="#0B192C" stroke="#8C5A2B" stroke-width="1.5"/>
+                <!-- Colorful Paint Blobs -->
+                <circle cx="28" cy="32" r="4" fill="#EF4444"/>
+                <circle cx="40" cy="25" r="4" fill="#3B82F6"/>
+                <circle cx="52" cy="30" r="4" fill="#FACC15"/>
+                <circle cx="56" cy="43" r="4" fill="#22C55E"/>
+                <circle cx="46" cy="54" r="4" fill="#A855F7"/>
+              </svg>
+              <div>
+                <span class="text-xs font-black text-gold-200 block">تنسيق ألوان ودهانات بالكمبيوتر</span>
+                <span class="text-[11px] text-gray-300">خامات قياسية (يوتن / جي إل سي / سايبس)</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Trust & Stats Bar -->
+      <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="p-4 rounded-2xl bg-navy-900/90 border border-gold-400/35 flex items-center gap-3.5 shadow-lg">
+          <div class="w-12 h-12 rounded-xl bg-olive-500/15 border border-olive-500/40 flex items-center justify-center text-olive-400 text-xl shrink-0">
+            <i class="fa-solid fa-Compass-drafting"></i>
+          </div>
+          <div>
+            <span class="text-xl sm:text-2xl font-black text-white block">+12 عاماً</span>
+            <span class="text-xs text-gray-300">خبرة في التشطيبات والديكور</span>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-navy-900/90 border border-gold-400/35 flex items-center gap-3.5 shadow-lg">
+          <div class="w-12 h-12 rounded-xl bg-gold-400/15 border border-gold-400/40 flex items-center justify-center text-gold-300 text-xl shrink-0">
+            <i class="fa-solid fa-house-circle-check"></i>
+          </div>
+          <div>
+            <span class="text-xl sm:text-2xl font-black text-white block">+340 وحدة</span>
+            <span class="text-xs text-gray-300">تم تسليمها على المفتاح</span>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-navy-900/90 border border-gold-400/35 flex items-center gap-3.5 shadow-lg">
+          <div class="w-12 h-12 rounded-xl bg-sky-500/15 border border-sky-400/40 flex items-center justify-center text-sky-300 text-xl shrink-0">
+            <i class="fa-solid fa-File-signature"></i>
+          </div>
+          <div>
+            <span class="text-xl sm:text-2xl font-black text-white block">التزام تام</span>
+            <span class="text-xs text-gray-300">بالجدول الزمني والمقايسة</span>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-navy-900/90 border border-gold-400/35 flex items-center gap-3.5 shadow-lg">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-400/40 flex items-center justify-center text-emerald-400 text-xl shrink-0">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div>
+            <span class="text-xl sm:text-2xl font-black text-white block">ضمان شامل</span>
+            <span class="text-xs text-gray-300">بإشراف إدارة / أبو إياد</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 3. SERVICES GRID (خدماتنا المتكاملة)                       -->
+  <!-- ========================================================= -->
+  <section id="services" class="py-16 bg-navy-900 border-b border-gold-400/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      
+      <!-- Section Heading -->
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <span class="px-3.5 py-1 rounded-full bg-olive-500/15 border border-olive-500/40 text-olive-400 text-xs font-extrabold">
+          خدمات هندسية وفنية شاملة
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-white">
+          خدمات <span class="text-olive-400">مكتب إبداع</span> للتشطيبات والديكور
+        </h2>
+        <p class="text-sm sm:text-base text-gray-300">
+          نقدم لك كافة مراحل التشطيب تحت سقف واحد وبإشراف هندسي وفني مباشر من <b class="text-gold-300">أبو إياد</b>، لتوفير وقتك وأموالك وضمان أعلى جودة تنفيذ.
+        </p>
+      </div>
+
+      <!-- 6 Services Cards Grid -->
+      <div id="servicesGridContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Populated dynamically via JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 4. INTERACTIVE ROOM PAINT & LIGHTING SIMULATOR            -->
+  <!-- ========================================================= -->
+  <section id="simulator" class="py-16 bg-navy-800/70 border-b border-gold-400/25">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+
+      <!-- Section Heading with Painter Palette Accent -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-gold-400/25 pb-6">
+        <div class="space-y-2 text-center md:text-right">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-400/15 border border-gold-400/40 text-gold-200 text-xs font-bold">
+            <i class="fa-solid fa-palette text-olive-400"></i>
+            <span>استوديو مكتب إبداع التفاعلي</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-black text-white">
+            محاكي الألوان والأرضيات والإضاءة الحديثة
+          </h2>
+          <p class="text-sm text-gray-300 max-w-2xl">
+            جرب تنسيق ألوان دهانات الحوائط، درجات الأخشاب والباركيه، ولون الإضاءة المخفية (Hidden LED) على تصميم غرفة المعيشة الخاصة بمكتب إبداع قبل التنفيذ الفعلي.
+          </p>
+        </div>
+
+        <!-- Artistic Painter Palette Badge -->
+        <div class="flex items-center gap-3 bg-navy-900 px-4 py-3 rounded-2xl border border-gold-400/50 shadow-lg">
+          <svg viewBox="0 0 80 80" class="w-12 h-12 shrink-0">
+            <line x1="15" y1="65" x2="65" y2="12" stroke="#9A3412" stroke-width="4" stroke-linecap="round"/>
+            <polygon points="62,15 70,7 66,19" fill="#3B82F6"/>
+            <path d="M18 42 C12 22, 42 12, 58 24 C72 35, 68 62, 46 66 C34 68, 30 56, 24 56 C18 56, 22 50, 18 42 Z" fill="#D9A066" stroke="#8C5A2B" stroke-width="2"/>
+            <circle cx="28" cy="48" r="4.5" fill="#0B192C"/>
+            <circle cx="28" cy="32" r="4" fill="#EF4444"/>
+            <circle cx="40" cy="25" r="4" fill="#3B82F6"/>
+            <circle cx="52" cy="30" r="4" fill="#FACC15"/>
+            <circle cx="56" cy="43" r="4" fill="#22C55E"/>
+            <circle cx="46" cy="54" r="4" fill="#A855F7"/>
+          </svg>
+          <div class="text-xs">
+            <span class="font-black text-olive-400 block">معاينة حية 100%</span>
+            <span class="text-gray-300">اختر ألوانك وأرسلها لأبو إياد</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Simulator Main Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+        <!-- Interactive Architectural Room Canvas (7 cols) -->
+        <div class="lg:col-span-7 space-y-4">
+          <div class="rounded-3xl bg-navy-950 p-3 sm:p-4 gold-double-frame relative overflow-hidden">
+            <svg id="simRoomSvg" viewBox="0 0 600 390" class="w-full h-auto rounded-2xl block">
+              <defs>
+                <linearGradient id="simCoveLed" x1="0" y1="0" x2="0" y2="1">
+                  <stop id="simLedStop1" offset="0%" stop-color="#FFCF70" stop-opacity="0.95"/>
+                  <stop id="simLedStop2" offset="55%" stop-color="#FFEBB8" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="#F4EFE6" stop-opacity="0"/>
+                </linearGradient>
+                <radialGradient id="simWinLight" cx="50%" cy="50%" r="50%">
+                  <stop id="simWinStop1" offset="0%" stop-color="#FFFFFF"/>
+                  <stop id="simWinStop2" offset="85%" stop-color="#FFF5D6"/>
+                  <stop offset="100%" stop-color="#E2D2B5"/>
+                </radialGradient>
+              </defs>
+
+              <!-- Dynamic Back Wall -->
+              <rect id="simWallRect" x="185" y="26" width="415" height="240" fill="#F3EEE6" class="transition-colors duration-500"/>
+
+              <!-- Ceiling & Cove Light -->
+              <rect x="0" y="0" width="600" height="26" fill="#E5DEC9"/>
+              <rect x="185" y="26" width="415" height="60" fill="url(#simCoveLed)"/>
+              <line id="simCeilingLedLine" x1="185" y1="26" x2="600" y2="26" stroke="#FFBE42" stroke-width="5.5"/>
+
+              <!-- Left Wooden Shelving Unit -->
+              <rect id="simShelfUnit" x="0" y="22" width="188" height="250" fill="#C5B097" stroke="#9E876D" stroke-width="3" class="transition-colors duration-500"/>
+              <rect x="14" y="32" width="160" height="52" fill="#E3D9CE"/>
+              <rect x="14" y="92" width="160" height="72" fill="#E3D9CE"/>
+              <rect x="14" y="172" width="160" height="52" fill="#E3D9CE"/>
+              <rect x="14" y="230" width="160" height="36" fill="#D5C7B8"/>
+
+              <!-- Decor on Shelves -->
+              <rect x="30" y="104" width="48" height="56" fill="#FAF8F5" stroke="#6E6256" stroke-width="3"/>
+              <path d="M132 162 C126 130, 146 130, 140 162 Z" fill="#26211E"/>
+              <path d="M152 162 C145 118, 167 118, 160 162 Z" fill="#3B332E"/>
+              <circle cx="95" cy="148" r="9" fill="#4A7C2C"/>
+              <rect x="90" y="153" width="10" height="10" fill="#D6D3D1"/>
+
+              <!-- Iconic Round Grid Window -->
+              <circle cx="435" cy="122" r="68" fill="url(#simWinLight)" stroke="#1C1917" stroke-width="8"/>
+              <line x1="405" y1="60" x2="405" y2="184" stroke="#1C1917" stroke-width="3"/>
+              <line x1="435" y1="54" x2="435" y2="190" stroke="#1C1917" stroke-width="3"/>
+              <line x1="465" y1="60" x2="465" y2="184" stroke="#1C1917" stroke-width="3"/>
+              <line x1="373" y1="95" x2="497" y2="95" stroke="#1C1917" stroke-width="3"/>
+              <line x1="367" y1="122" x2="503" y2="122" stroke="#1C1917" stroke-width="3"/>
+              <line x1="373" y1="149" x2="497" y2="149" stroke="#1C1917" stroke-width="3"/>
+
+              <!-- Wood Cladding Behind Sofa -->
+              <rect id="simWoodCladding" x="215" y="196" width="385" height="72" fill="#B89772" stroke="#9A7B56" stroke-width="1.5" class="transition-colors duration-500"/>
+              <line id="simSofaLedLine" x1="215" y1="196" x2="600" y2="196" stroke="#FFD27D" stroke-width="4"/>
+
+              <!-- Flooring -->
+              <polygon id="simFloorPoly" points="0,268 600,268 600,390 0,390" fill="#C8B094" class="transition-colors duration-500"/>
+              <!-- Area Rug -->
+              <polygon points="180,305 585,305 600,385 145,385" fill="#7D7268" opacity="0.9"/>
+
+              <!-- Nightstand + Table Lamp -->
+              <rect x="180" y="222" width="58" height="58" rx="3" fill="#F5F5F4" stroke="#D6D3D1" stroke-width="1.5"/>
+              <polygon id="simLampShade" points="198,176 222,176 227,196 193,196" fill="#FFFBEB" stroke="#D97706" stroke-width="1.5"/>
+              <line x1="210" y1="196" x2="210" y2="222" stroke="#292524" stroke-width="3"/>
+              <circle cx="192" cy="210" r="10" fill="#4D7C2B"/>
+              <rect x="187" y="215" width="10" height="8" rx="2" fill="#FFFFFF"/>
+
+              <!-- Sofa & Armchair -->
+              <rect x="245" y="212" width="295" height="78" rx="8" fill="#D9CFC3" stroke="#BFB2A3" stroke-width="2"/>
+              <rect x="260" y="200" width="125" height="46" rx="6" fill="#E6DED5" stroke="#C8BCB0" stroke-width="1.5"/>
+              <rect x="392" y="200" width="125" height="46" rx="6" fill="#E6DED5" stroke="#C8BCB0" stroke-width="1.5"/>
+              <polygon points="262,212 310,202 318,244 270,248" fill="#F7F4EF" stroke="#D6CFC7"/>
+              <rect x="255" y="244" width="270" height="26" rx="4" fill="#CFC3B4"/>
+
+              <path d="M55 245 Q55 224 78 224 L165 235 Q185 238 185 260 L185 318 L55 318 Z" fill="#D5C5B3" stroke="#B8A590" stroke-width="2"/>
+              <polygon points="75,228 122,220 132,268 82,270" fill="#F2EDE7"/>
+              <line x1="68" y1="318" x2="64" y2="346" stroke="#9C8267" stroke-width="6" stroke-linecap="round"/>
+              <line x1="172" y1="318" x2="172" y2="346" stroke="#9C8267" stroke-width="6" stroke-linecap="round"/>
+
+              <!-- Coffee Table & Vase -->
+              <rect id="simTableRect" x="295" y="298" width="195" height="22" rx="3" fill="#B08D67" stroke="#8C6D4B" stroke-width="1.5"/>
+              <line x1="312" y1="320" x2="312" y2="345" stroke="#785C3D" stroke-width="5"/>
+              <line x1="472" y1="320" x2="472" y2="345" stroke="#785C3D" stroke-width="5"/>
+              <path d="M352 300 C346 270, 372 270, 366 300 Z" fill="#FFFFFF" stroke="#D6D3D1" stroke-width="1.5"/>
+              <path d="M359 272 L350 245 M359 272 L368 242 M359 272 L359 248" stroke="#44403C" stroke-width="1.5"/>
+            </svg>
+
+            <!-- Live Status Summary Overlay -->
+            <div class="mt-3 flex flex-wrap items-center justify-between gap-2 px-3 py-2 rounded-xl bg-navy-900 border border-gold-400/35 text-xs">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-olive-400"></span>
+                <span class="text-gray-300">الاختيار الحالي:</span>
+                <strong id="simStatusSummary" class="text-gold-200">أوف وايت دافئ | أرو طبيعي | إضاءة وورم 3000K</strong>
+              </div>
+              <button onclick="resetSimulator()" class="text-xs text-olive-400 hover:underline font-bold">
+                <i class="fa-solid fa-rotate-right ml-1"></i>استعادة الافتراضي
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simulator Controls Panel (5 cols) -->
+        <div class="lg:col-span-5 rounded-3xl bg-navy-900 p-6 border border-gold-400/45 shadow-xl space-y-6">
+          
+          <!-- 1. Wall Paint Swatches -->
+          <div class="space-y-3">
+            <label class="text-sm font-black text-gold-200 flex items-center gap-2">
+              <i class="fa-solid fa-fill-drip text-olive-400"></i>
+              <span>1. اختر لون دهان الحائط (يوتن / GLC):</span>
+            </label>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+              <button onclick="setSimWall('#F3EEE6', 'أوف وايت دافئ')" class="p-2.5 rounded-xl bg-navy-950 border border-gold-400/50 hover:border-olive-400 flex items-center gap-2.5 text-xs font-bold transition">
+                <span class="w-6 h-6 rounded-full bg-[#F3EEE6] border border-gray-400 shrink-0"></span>
+                <span>أوف وايت دافئ</span>
+              </button>
+              <button onclick="setSimWall('#CBD5E1', 'رمادي مودرن')" class="p-2.5 rounded-xl bg-navy-950 border border-white/15 hover:border-olive-400 flex items-center gap-2.5 text-xs font-bold transition">
+                <span class="w-6 h-6 rounded-full bg-[#CBD5E1] border border-gray-400 shrink-0"></span>
+                <span>رمادي مودرن</span>
+              </button>
+              <button onclick="setSimWall('#132A4F', 'كحلي ملكي')" class="p-2.5 rounded-xl bg-navy-950 border border-white/15 hover:border-olive-400 flex items-center gap-2.5 text-xs font-bold transition">
+                <span class="w-6 h-6 rounded-full bg-[#132A4F] border border-gold-400 shrink-0"></span>
+                <span>كحلي ملكي</span>
+              </button>
+              <button onclick="setSimWall('#D9E2DC', 'أخضر زيتوني هادئ')" class="p-2.5 rounded-xl bg-navy-950 border border-white/15 hover:border-olive-400 flex items-center gap-2.5 text-xs font-bold transition">
+                <span class="w-6 h-6 rounded-full bg-[#D9E2DC] border border-gray-400 shrink-0"></span>
+                <span>أخضر هادئ</span>
+              </button>
+              <button onclick="setSimWall('#E6CCB2', 'بيج رملي')" class="p-2.5 rounded-xl bg-navy-950 border border-white/15 hover:border-olive-400 flex items-center gap-2.5 text-xs font-bold transition">
+                <span class="w-6 h-6 rounded-full bg-[#E6CCB2] border border-gray-400 shrink-0"></span>
+                <span>بيج رملي</span>
+              </button>
+              <button onclick="setSimWall('#C8B6A6', 'كافيه لاتيه')" class="p-2.5 rounded-xl bg-navy-950 border border-white/15 hover:border-olive-400 flex items-center gap-2.5 text-xs font-bold transition">
+                <span class="w-6 h-6 rounded-full bg-[#C8B6A6] border border-gray-400 shrink-0"></span>
+                <span>كافيه لاتيه</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 2. Wood & Flooring Tone -->
+          <div class="space-y-3 pt-2 border-t border-white/10">
+            <label class="text-sm font-black text-gold-200 flex items-center gap-2">
+              <i class="fa-solid fa-layer-group text-olive-400"></i>
+              <span>2. درجة الأخشاب والباركيه (HDF / تجاليد):</span>
+            </label>
+            <div class="grid grid-cols-3 gap-2.5">
+              <button onclick="setSimWood('#C5B097', '#B89772', '#C8B094', 'أرو طبيعي')" class="p-2.5 rounded-xl bg-navy-950 border border-gold-400/40 hover:border-olive-400 text-center text-xs font-bold transition">
+                <span class="w-full h-3 rounded bg-[#B89772] block mb-1.5"></span>
+                <span>أرو طبيعي</span>
+              </button>
+              <button onclick="setSimWood('#7C5836', '#694626', '#8A6542', 'جوزي داكن')" class="p-2.5 rounded-xl bg-navy-950 border border-white/15 hover:border-olive-400 text-center text-xs font-bold transition">
+                <span class="w-full h-3 rounded bg-[#694626] block mb-1.5"></span>
+                <span>جوزي داكن</span>
+              </button>
+              <button onclick="setSimWood('#CBD5E1', '#94A3B8', '#CBD5E1', 'رمادي اسكندنافي')" class="p-2.5 rounded-xl bg-navy-950 border border-white/15 hover:border-olive-400 text-center text-xs font-bold transition">
+                <span class="w-full h-3 rounded bg-[#94A3B8] block mb-1.5"></span>
+                <span>اسكندنافي</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 3. Hidden LED & Lamp Lighting Mood -->
+          <div class="space-y-3 pt-2 border-t border-white/10">
+            <label class="text-sm font-black text-gold-200 flex items-center gap-2">
+              <i class="fa-regular fa-lightbulb text-olive-400"></i>
+              <span>3. نظام الإضاءة المخفية والليد (LED Mood):</span>
+            </label>
+            <div class="grid grid-cols-2 gap-2.5 text-xs font-bold">
+              <button onclick="setSimLighting('warm3000', 'إضاءة وورم 3000K')" class="p-2.5 rounded-xl bg-amber-500/20 border border-amber-400/60 text-amber-200 hover:bg-amber-500/30 transition flex items-center justify-center gap-1.5">
+                <i class="fa-solid fa-sun"></i>
+                <span>إضاءة وورم 3000K</span>
+              </button>
+              <button onclick="setSimLighting('daylight4000', 'إضاءة نهارية 4000K')" class="p-2.5 rounded-xl bg-yellow-100/15 border border-yellow-200/50 text-yellow-100 hover:bg-yellow-100/25 transition flex items-center justify-center gap-1.5">
+                <i class="fa-solid fa-cloud-sun"></i>
+                <span>إضاءة نهارية 4000K</span>
+              </button>
+              <button onclick="setSimLighting('cool6000', 'إضاءة بيضاء 6000K')" class="p-2.5 rounded-xl bg-sky-500/20 border border-sky-400/60 text-sky-200 hover:bg-sky-500/30 transition flex items-center justify-center gap-1.5">
+                <i class="fa-solid fa-bolt"></i>
+                <span>إضاءة بيضاء 6000K</span>
+              </button>
+              <button onclick="setSimLighting('sunset', 'وضع الغروب الخافت')" class="p-2.5 rounded-xl bg-orange-500/20 border border-orange-400/60 text-orange-200 hover:bg-orange-500/30 transition flex items-center justify-center gap-1.5">
+                <i class="fa-solid fa-moon"></i>
+                <span>وضع الغروب الخافت</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Send Chosen Design to WhatsApp -->
+          <div class="pt-3">
+            <button onclick="sendSimulatorChoiceToWhatsApp()" class="w-full py-3.5 px-4 rounded-2xl olive-gradient-btn font-black text-sm shadow-xl hover:opacity-95 transition flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>اعتمد هذا التنسيق وأرسله لأبو إياد عبر واتساب</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 5. SMART FINISHING COST CALCULATOR & QUOTATION            -->
+  <!-- ========================================================= -->
+  <section id="calculator" class="py-16 bg-navy-900 border-b border-gold-400/25">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+
+      <!-- Section Heading -->
+      <div class="text-center max-w-3xl mx-auto space-y-3 no-print">
+        <span class="px-3.5 py-1 rounded-full bg-gold-400/15 border border-gold-400/40 text-gold-200 text-xs font-extrabold">
+          أسعار تنافسية ومقايسة شفافة 2026
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-white">
+          حاسبة تكلفة التشطيب <span class="text-olive-400">والمقايسة الفورية</span>
+        </h2>
+        <p class="text-sm sm:text-base text-gray-300">
+          احسب التكلفة التقديرية لتشطيب وحدتك السكنية أو الإدارية في ثوانٍ مع بيان تفصيلي لتوزيع الميزانية على بنود الأعمال، وإمكانية طباعة عرض السعر أو إرساله مباشرة لـ <b class="text-gold-300">إدارة / أبو إياد</b>.
+        </p>
+        <!-- Live Admin Price Strip -->
+        <div class="inline-flex flex-wrap items-center justify-center gap-3 px-4 py-2 rounded-2xl bg-navy-950 border border-gold-400/35 text-xs">
+          <span class="text-gray-300 font-bold"><i class="fa-solid fa-tag text-olive-400 ml-1"></i>أسعار المتر المعتمدة حالياً:</span>
+          <span class="px-2.5 py-0.5 rounded-lg bg-white/5 text-white">الاقتصادية: <b id="liveBannerEcon" class="text-olive-400">2,550</b> ج.م</span>
+          <span class="px-2.5 py-0.5 rounded-lg bg-white/5 text-white">سوبر لوكس: <b id="liveBannerSuper" class="text-gold-300">3,250</b> ج.م</span>
+          <span class="px-2.5 py-0.5 rounded-lg bg-white/5 text-white">VIP الملكية: <b id="liveBannerVip" class="text-amber-400">4,400</b> ج.م</span>
+          <button onclick="openAdminPanel('pricing')" class="text-olive-400 hover:underline font-extrabold flex items-center gap-1">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span>تعديل الأسعار</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+        <!-- Calculator Inputs Panel (6 cols) -->
+        <div class="lg:col-span-6 rounded-3xl bg-navy-800 p-6 sm:p-8 border border-gold-400/40 shadow-xl space-y-6 no-print">
+          
+          <!-- 1. Unit Type -->
+          <div class="space-y-2.5">
+            <label class="text-sm font-extrabold text-gold-200 block">1. نوع الوحدة:</label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+              <button type="button" onclick="setCalcUnit('apartment')" id="unitBtn-apartment" class="calc-unit-btn p-3 rounded-xl border-2 border-olive-400 bg-navy-900 text-white text-xs font-extrabold flex flex-col items-center gap-1.5 transition">
+                <i class="fa-solid fa-building text-olive-400 text-base"></i>
+                <span>شقة سكنية</span>
+              </button>
+              <button type="button" onclick="setCalcUnit('villa')" id="unitBtn-villa" class="calc-unit-btn p-3 rounded-xl border border-white/15 bg-navy-900/60 text-gray-300 text-xs font-bold flex flex-col items-center gap-1.5 transition">
+                <i class="fa-solid fa-house-chimney-window text-gold-400 text-base"></i>
+                <span>فيلا مستقلة</span>
+              </button>
+              <button type="button" onclick="setCalcUnit('duplex')" id="unitBtn-duplex" class="calc-unit-btn p-3 rounded-xl border border-white/15 bg-navy-900/60 text-gray-300 text-xs font-bold flex flex-col items-center gap-1.5 transition">
+                <i class="fa-solid fa-stairs text-amber-400 text-base"></i>
+                <span>دوبلكس</span>
+              </button>
+              <button type="button" onclick="setCalcUnit('office')" id="unitBtn-office" class="calc-unit-btn p-3 rounded-xl border border-white/15 bg-navy-900/60 text-gray-300 text-xs font-bold flex flex-col items-center gap-1.5 transition">
+                <i class="fa-solid fa-briefcase text-sky-400 text-base"></i>
+                <span>مكتب / تجاري</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 2. Area Slider & Input (50 to 600 m2) -->
+          <div class="space-y-2.5 bg-navy-900/90 p-4 rounded-2xl border border-gold-400/30">
+            <div class="flex items-center justify-between">
+              <label for="calcAreaNum" class="text-sm font-extrabold text-gold-200">2. المساحة الإجمالية (بالمتر المربع):</label>
+              <div class="flex items-center gap-1.5 bg-navy-950 px-3 py-1.5 rounded-xl border border-olive-400/60">
+                <input id="calcAreaNum" type="number" min="50" max="600" value="150" oninput="syncCalcAreaInput(this.value)"
+                       class="w-16 bg-transparent text-center font-black text-base text-olive-400 focus:outline-none" />
+                <span class="text-xs font-bold text-gray-300">م²</span>
+              </div>
+            </div>
+            <input id="calcAreaRange" type="range" min="50" max="600" step="5" value="150" oninput="syncCalcAreaSlider(this.value)" class="w-full mt-2" />
+            <div class="flex justify-between text-[11px] text-gray-400 pt-1">
+              <span>50 م²</span>
+              <span>150 م²</span>
+              <span>300 م²</span>
+              <span>450 م²</span>
+              <span>600 م²</span>
+            </div>
+          </div>
+
+          <!-- 3. Current Unit Condition -->
+          <div class="space-y-2.5">
+            <label class="text-sm font-extrabold text-gold-200 block">3. الحالة الحالية للوحدة:</label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+              <button type="button" onclick="setCalcCond('redbrick')" id="condBtn-redbrick" class="p-3 rounded-xl border-2 border-olive-400 bg-navy-900 text-white text-xs font-extrabold transition">
+                على الطوب الأحمر
+              </button>
+              <button type="button" onclick="setCalcCond('semi')" id="condBtn-semi" class="p-3 rounded-xl border border-white/15 bg-navy-900/60 text-gray-300 text-xs font-bold transition">
+                نصف تشطيب (محارة وحلوق)
+              </button>
+              <button type="button" onclick="setCalcCond('renovation')" id="condBtn-renovation" class="p-3 rounded-xl border border-white/15 bg-navy-900/60 text-gray-300 text-xs font-bold transition">
+                تجديد شامل (تكسير وإحلال)
+              </button>
+            </div>
+          </div>
+
+          <!-- 4. Finishing Package Tier -->
+          <div class="space-y-2.5">
+            <label class="text-sm font-extrabold text-gold-200 block">4. باقة التشطيب والديكور:</label>
+            <div class="space-y-2.5">
+              
+              <!-- Economy -->
+              <div onclick="setCalcTier('economy')" id="tierCard-economy" class="cursor-pointer p-3.5 rounded-2xl border border-white/15 bg-navy-900/60 hover:border-gold-400/50 flex items-center justify-between transition">
+                <div>
+                  <span class="text-sm font-black text-white block">1. الباقة الاقتصادية التنافسية</span>
+                  <span class="text-xs text-gray-300">تشطيب عملي أنيق بأسعار تنافسية وخامات قياسية معتمدة</span>
+                </div>
+                <div class="text-left shrink-0">
+                  <span id="tierPriceLabel-economy" class="text-xs font-black text-olive-400 block">2,550 ج.م/م²</span>
+                  <span class="text-[10px] text-gray-400">اقتصادية</span>
+                </div>
+              </div>
+
+              <!-- Super Lux -->
+              <div onclick="setCalcTier('superlux')" id="tierCard-superlux" class="cursor-pointer p-3.5 rounded-2xl border-2 border-olive-400 bg-navy-900 flex items-center justify-between transition shadow-lg">
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-sm font-black text-gold-200">2. باقة سوبر لوكس</span>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-olive-500 text-navy-950 font-black">الأكثر طلباً</span>
+                  </div>
+                  <span class="text-xs text-gray-200">جبس بورد، إضاءة ليد مخفية، أرضيات بورسلين، ودهانات يوتن</span>
+                </div>
+                <div class="text-left shrink-0">
+                  <span id="tierPriceLabel-superlux" class="text-xs font-black text-gold-300 block">3,250 ج.م/م²</span>
+                  <span class="text-[10px] text-gray-400">سوبر لوكس</span>
+                </div>
+              </div>
+
+              <!-- VIP -->
+              <div onclick="setCalcTier('vip')" id="tierCard-vip" class="cursor-pointer p-3.5 rounded-2xl border border-white/15 bg-navy-900/60 hover:border-gold-400/50 flex items-center justify-between transition">
+                <div>
+                  <span class="text-sm font-black text-white block">3. باقة إبداع VIP الملكية</span>
+                  <span class="text-xs text-gray-300">أحدث وأرقى الديكورات الفندقية الفاخرة + تصميم 3D شامل مجاناً</span>
+                </div>
+                <div class="text-left shrink-0">
+                  <span id="tierPriceLabel-vip" class="text-xs font-black text-gold-400 block">4,400 ج.م/م²</span>
+                  <span class="text-[10px] text-gray-400">VIP ملكي</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Printable Quotation Output Card (6 cols) -->
+        <div id="printableQuotationArea" class="lg:col-span-6 rounded-3xl bg-navy-950 p-6 sm:p-8 gold-double-frame space-y-6">
+          
+          <!-- Quotation Header -->
+          <div class="flex items-center justify-between border-b border-gold-400/35 pb-4">
+            <div>
+              <span class="text-xs text-gold-300 font-bold block">مقايسة تقديرية رسمية من:</span>
+              <h3 class="text-xl font-black text-olive-400">مكتب إبداع للتشطيبات والديكور</h3>
+              <span class="text-xs text-white font-bold">إدارة / أبو إياد — هاتف: 01090408223</span>
+            </div>
+            <div class="text-left">
+              <span class="text-[11px] text-gray-400 block">تاريخ العرض</span>
+              <span id="quoteDateDisplay" class="text-xs font-bold text-gold-200"></span>
+              <span id="quoteSummaryBadge" class="block mt-1 text-[11px] px-2.5 py-0.5 rounded bg-olive-500/20 text-olive-400 border border-olive-500/40 font-bold">
+                شقة 150 م² - سوبر لوكس
+              </span>
+            </div>
+          </div>
+
+          <!-- Total Price & Key Metrics -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 bg-navy-900 p-4 rounded-2xl border border-gold-400/30">
+            <div class="sm:col-span-2">
+              <span class="text-xs text-gray-300 block">التكلفة الإجمالية التقديرية للتشطيب:</span>
+              <div id="quoteTotalCost" class="text-2xl sm:text-3xl font-black text-olive-400 mt-1">487,500 ج.م</div>
+              <span id="quoteRangeCost" class="text-[11px] text-gold-200 block mt-0.5">النطاق التقريبي: 463,000 - 512,000 ج.م</span>
+            </div>
+            <div class="flex sm:flex-col justify-between sm:justify-center sm:border-r border-gold-400/20 sm:pr-4 pt-2 sm:pt-0 border-t sm:border-t-0">
+              <div>
+                <span class="text-[11px] text-gray-400 block">متوسط سعر المتر</span>
+                <strong id="quoteMeterRate" class="text-sm font-black text-white">3,250 ج.م / م²</strong>
+              </div>
+              <div class="mt-1">
+                <span class="text-[11px] text-gray-400 block">مدة التنفيذ المتوقعة</span>
+                <strong id="quoteDuration" class="text-sm font-black text-gold-300">8 - 10 أسابيع</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Itemized Breakdown Table -->
+          <div class="space-y-3">
+            <h4 class="text-xs font-extrabold text-gold-200 flex items-center gap-1.5">
+              <i class="fa-solid fa-table-list text-olive-400"></i>
+              <span>جدول توزيع الميزانية على بنود الأعمال الهندسية:</span>
+            </h4>
+            <div class="overflow-hidden rounded-2xl border border-white/10">
+              <table class="w-full text-right text-xs">
+                <thead class="bg-navy-800 text-gold-200 font-extrabold">
+                  <tr>
+                    <th class="py-2.5 px-3">بند الأعمال</th>
+                    <th class="py-2.5 px-3 text-center">النسبة</th>
+                    <th class="py-2.5 px-3 text-left">التكلفة التقديرية</th>
+                  </tr>
+                </thead>
+                <tbody id="quoteBreakdownTableBody" class="divide-y divide-white/10 bg-navy-900/70">
+                  <!-- Populated by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="pt-2 flex flex-col sm:flex-row gap-3 no-print">
+            <button onclick="sendQuotationWhatsApp()" class="flex-1 py-3.5 px-4 rounded-2xl olive-gradient-btn font-black text-xs sm:text-sm shadow-xl hover:opacity-95 transition flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>إرسال المقايسة عبر واتساب لأبو إياد (01090408223)</span>
+            </button>
+            <button onclick="window.print()" class="py-3.5 px-5 rounded-2xl bg-navy-800 hover:bg-navy-700 text-gold-200 border border-gold-400/50 font-bold text-xs sm:text-sm transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-print"></i>
+              <span>طباعة / حفظ عرض السعر</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 6. INTERACTIVE BEFORE & AFTER PORTFOLIO GALLERY           -->
+  <!-- ========================================================= -->
+  <section id="portfolio" class="py-16 bg-navy-800/60 border-b border-gold-400/25">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+
+      <!-- Section Heading & Category Filter Tabs -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2 text-center md:text-right">
+          <span class="px-3.5 py-1 rounded-full bg-olive-500/15 border border-olive-500/40 text-olive-400 text-xs font-extrabold">
+            شاهد الفرق بنفسك
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-black text-white">
+            كتالوج أعمالنا <span class="text-gold-300">(قبل وبعد التشطيب)</span>
+          </h2>
+          <p class="text-sm text-gray-300">
+            حرك المؤشر أو اضغط على زر التحويل لمشاهدة كيف نحول الوحدات من الطوب الأحمر والمحارة إلى تحف معمارية عصرية.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="flex flex-wrap items-center justify-center gap-2">
+          <button onclick="filterPortfolioItems('all')" data-cat="all" class="port-filter-btn px-4 py-2 rounded-xl text-xs font-black olive-gradient-btn shadow">الكل</button>
+          <button onclick="filterPortfolioItems('living')" data-cat="living" class="port-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-navy-900 text-gray-300 border border-white/10 hover:text-white">شقق وغرف معيشة</button>
+          <button onclick="filterPortfolioItems('bedroom')" data-cat="bedroom" class="port-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-navy-900 text-gray-300 border border-white/10 hover:text-white">فيلات وغرف نوم</button>
+          <button onclick="filterPortfolioItems('kitchen')" data-cat="kitchen" class="port-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-navy-900 text-gray-300 border border-white/10 hover:text-white">مطابخ وحمامات</button>
+          <button onclick="filterPortfolioItems('office')" data-cat="office" class="port-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-navy-900 text-gray-300 border border-white/10 hover:text-white">واجهات ومكاتب</button>
+          <button onclick="openAdminPanel('portfolio')" class="px-3.5 py-2 rounded-xl text-xs font-extrabold bg-gold-400/15 text-gold-300 border border-gold-400/50 hover:bg-gold-400 hover:text-navy-950 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-plus"></i>
+            <span>إضافة مشروع جديد</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div id="portfolioGridContainer" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Populated by JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- 7. CLIENT PROJECT TRACKER PORTAL                          -->
+  <!-- ========================================================= -->
+  <section id="tracker" class="py-16 bg-navy-900 border-b border-gold-400/25">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+
+      <!-- Heading -->
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <span class="px-3.5 py-1 rounded-full bg-gold-400/15 border border-gold-400/40 text-gold-200 text-xs font-extrabold">
+          شفافية ومتابعة لحظية
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-white">
+          بوابة متابعة تنفيذ المشاريع <span class="text-olive-400">للعملاء</span>
+        </h2>
+        <p class="text-sm text-gray-300">
+          يتيح مكتب إبداع لعملائه متابعة نسب الإنجاز ومراحل التشطيب وملاحظات <b class="text-gold-300">إدارة / أبو إياد</b> خطوة بخطوة. اختر كود مشروعك أو أدخله بالأسفل:
+        </p>
+      </div>
+
+      <!-- Tracker Search & Quick Dynamic Codes -->
+      <div class="max-w-4xl mx-auto rounded-3xl bg-navy-800 p-6 sm:p-8 gold-double-frame space-y-6">
+        
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-5 border-b border-white/10">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="text-xs font-extrabold text-gold-200">أكواد العملاء المتاحة:</span>
+            <div id="trackerCodesButtonsContainer" class="flex flex-wrap items-center gap-1.5">
+              <!-- Populated dynamically from Admin State -->
+            </div>
+            <button onclick="openAdminPanel('tracker')" class="px-2.5 py-1.5 rounded-xl bg-gold-400/15 border border-gold-400/40 text-gold-200 text-[11px] font-bold hover:bg-gold-400 hover:text-navy-950 transition">
+              <i class="fa-solid fa-sliders ml-1"></i>تحديث النسب / إضافة كود
+            </button>
+          </div>
+
+          <div class="flex items-center gap-2 w-full sm:w-auto">
+            <input id="trackerInputCode" type="text" placeholder="أدخل كود مشروعك (مثال: EBD-101)" value="EBD-101"
+                   class="flex-1 sm:w-48 px-3.5 py-2 rounded-xl bg-navy-950 border border-gold-400/40 text-xs text-white focus:outline-none focus:border-olive-400" />
+            <button onclick="searchTrackerCode()" class="px-4 py-2 rounded-xl gold-gradient-btn font-black text-xs">
+              استعلام
+            </button>
+          </div>
+        </div>
+
+        <!-- Dynamic Project Tracker Report -->
+        <div id="trackerResultArea" class="space-y-6">
+          <!-- Populated by JS -->
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- FOOTER WITH ARTISTIC PALETTE & ADMIN ACCESS               -->
+  <!-- ========================================================= -->
+  <footer class="bg-navy-950 border-t-2 border-gold-400/50 py-10 text-xs text-gray-400 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3.5">
+        <!-- Painter Palette SVG in Footer -->
+        <svg viewBox="0 0 80 80" class="w-11 h-11 shrink-0">
+          <line x1="15" y1="65" x2="65" y2="12" stroke="#9A3412" stroke-width="4" stroke-linecap="round"/>
+          <polygon points="62,15 70,7 66,19" fill="#3B82F6"/>
+          <path d="M18 42 C12 22, 42 12, 58 24 C72 35, 68 62, 46 66 C34 68, 30 56, 24 56 C18 56, 22 50, 18 42 Z" fill="#D9A066" stroke="#8C5A2B" stroke-width="2"/>
+          <circle cx="28" cy="48" r="4.5" fill="#0B192C"/>
+          <circle cx="28" cy="32" r="4" fill="#EF4444"/>
+          <circle cx="40" cy="25" r="4" fill="#3B82F6"/>
+          <circle cx="52" cy="30" r="4" fill="#FACC15"/>
+          <circle cx="56" cy="43" r="4" fill="#22C55E"/>
+          <circle cx="46" cy="54" r="4" fill="#A855F7"/>
+        </svg>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-base font-black text-olive-400">مكتب إبداع للتشطيبات والديكور</span>
+            <span>|</span>
+            <span class="text-gold-200 font-bold">إدارة / أبو إياد (<span class="office-phone-text">01090408223</span>)</span>
+          </div>
+          <p class="mt-1">أحدث وأرقى الديكورات الداخلية وبأسعار تنافسية — جميع الحقوق محفوظة © 2026</p>
+        </div>
+      </div>
+
+      <button onclick="openAdminPanel()" class="px-4 py-2.5 rounded-xl bg-navy-900 hover:bg-navy-800 border border-gold-400/50 text-gold-200 font-extrabold flex items-center gap-2 transition">
+        <i class="fa-solid fa-user-gear text-olive-400"></i>
+        <span>لوحة تحكم الإدارة 🔒</span>
+      </button>
+    </div>
+  </footer>
+
+  <!-- ========================================================= -->
+  <!-- PASSWORD LOGIN MODAL FOR ADMIN PANEL                      -->
+  <!-- ========================================================= -->
+  <div id="adminLoginModal" class="hidden fixed inset-0 z-50 bg-navy-950/85 backdrop-blur-md flex items-center justify-center p-4 no-print">
+    <div class="w-full max-w-md rounded-3xl bg-navy-900 gold-double-frame p-6 sm:p-8 space-y-5 relative animate-fadeIn">
+      <button onclick="closeAdminLoginModal()" class="absolute top-4 left-4 w-9 h-9 rounded-xl bg-navy-800 hover:bg-red-500/20 text-gray-300 hover:text-red-400 border border-white/10 flex items-center justify-center transition">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="text-center space-y-2">
+        <div class="w-16 h-16 mx-auto rounded-2xl bg-navy-800 border-2 border-gold-400 flex items-center justify-center text-gold-300 text-2xl shadow-lg">
+          <i class="fa-solid fa-user-shield"></i>
+        </div>
+        <h3 class="text-xl font-black text-white">تسجيل دخول لوحة الإدارة</h3>
+        <p class="text-xs text-gray-300">خاصة بـ <b class="text-olive-400">مكتب إبداع للتشطيبات والديكور — إدارة / أبو إياد</b></p>
+      </div>
+
+      <form onsubmit="handleAdminLogin(event)" class="space-y-4">
+        <div>
+          <label class="text-xs font-bold text-gold-200 block mb-1.5">كلمة مرور الإدارة:</label>
+          <input id="adminPassInput" type="password" required placeholder="أدخل كلمة المرور (1234 أو 01090408223)"
+                 class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-gold-400/50 text-sm text-white text-center tracking-widest focus:outline-none focus:border-olive-400" />
+          <p id="adminLoginError" class="hidden text-xs text-red-400 font-bold mt-1.5 text-center">
+            <i class="fa-solid fa-triangle-exclamation ml-1"></i>كلمة المرور غير صحيحة! جرب 1234 أو 01090408223
+          </p>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-xl gold-gradient-btn font-black text-sm shadow-lg hover:opacity-95 transition flex items-center justify-center gap-2">
+          <i class="fa-solid fa-unlock-keyhole"></i>
+          <span>دخول إلى لوحة التحكم</span>
+        </button>
+      </form>
+
+      <!-- Hint & Instant Demo Login Box -->
+      <div class="p-3.5 rounded-2xl bg-navy-950 border border-olive-400/40 text-center space-y-2.5">
+        <p class="text-[11px] text-gray-300">
+          <i class="fa-solid fa-circle-info text-olive-400 ml-1"></i>
+          كلمة المرور الافتراضية للتجربة: <code class="px-1.5 py-0.5 rounded bg-navy-800 text-gold-300 font-bold">1234</code> أو <code class="px-1.5 py-0.5 rounded bg-navy-800 text-gold-300 font-bold">01090408223</code>
+        </p>
+        <button type="button" onclick="quickDemoAdminLogin()" class="w-full py-2.5 rounded-xl bg-olive-500/20 hover:bg-olive-500 text-olive-400 hover:text-navy-950 border border-olive-400/50 font-extrabold text-xs transition flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-bolt"></i>
+          <span>دخول سريع للتجربة بضغطة واحدة</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- FULL ADMIN CONTROL PANEL MODAL (4 TABS)                   -->
+  <!-- ========================================================= -->
+  <div id="adminDashboardModal" class="hidden fixed inset-0 z-50 bg-navy-950/90 backdrop-blur-md flex items-center justify-center p-2 sm:p-5 no-print">
+    <div class="w-full max-w-6xl max-h-[94vh] rounded-3xl bg-navy-900 gold-double-frame flex flex-col overflow-hidden shadow-2xl">
+      
+      <!-- Modal Top Header -->
+      <div class="px-5 py-4 bg-navy-950 border-b border-gold-400/40 flex flex-wrap items-center justify-between gap-3 shrink-0">
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-2xl gold-gradient-btn flex items-center justify-center text-navy-950 text-lg font-black shadow">
+            <i class="fa-solid fa-sliders"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h2 class="text-base sm:text-lg font-black text-white">لوحة التحكم الإدارية — مكتب إبداع</h2>
+              <span class="px-2.5 py-0.5 rounded-full bg-olive-500/20 border border-olive-400/50 text-olive-400 text-[11px] font-extrabold">متصل وحفظ تلقائي</span>
+            </div>
+            <p class="text-xs text-gray-400">إدارة / أبو إياد — تعديل فوري للأسعار، المشاريع، وأكواد متابعة العملاء</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button onclick="logoutAdmin()" class="px-3 py-2 rounded-xl bg-navy-800 hover:bg-red-500/20 text-gray-300 hover:text-red-300 border border-white/10 text-xs font-bold transition flex items-center gap-1.5">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span class="hidden sm:inline">قفل اللوحة</span>
+          </button>
+          <button onclick="closeAdminDashboard()" class="px-4 py-2 rounded-xl olive-gradient-btn font-black text-xs flex items-center gap-1.5 shadow">
+            <i class="fa-solid fa-check"></i>
+            <span>العودة للموقع ومعاينة التعديلات</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 4 Navigation Tabs -->
+      <div class="px-5 pt-3 bg-navy-900 border-b border-white/10 flex flex-wrap gap-2 shrink-0">
+        <button onclick="switchAdminTab('pricing')" id="admTabBtn-pricing" class="adm-tab-btn px-4 py-2.5 rounded-t-2xl font-black text-xs sm:text-sm gold-gradient-btn flex items-center gap-2">
+          <i class="fa-solid fa-coins"></i>
+          <span>1. أسعار المتر والباقات</span>
+        </button>
+        <button onclick="switchAdminTab('portfolio')" id="admTabBtn-portfolio" class="adm-tab-btn px-4 py-2.5 rounded-t-2xl font-bold text-xs sm:text-sm bg-navy-800 text-gray-300 hover:text-white flex items-center gap-2">
+          <i class="fa-solid fa-images"></i>
+          <span>2. معرض الأعمال (<span id="admCountProjects">4</span>)</span>
+        </button>
+        <button onclick="switchAdminTab('tracker')" id="admTabBtn-tracker" class="adm-tab-btn px-4 py-2.5 rounded-t-2xl font-bold text-xs sm:text-sm bg-navy-800 text-gray-300 hover:text-white flex items-center gap-2">
+          <i class="fa-solid fa-bars-progress"></i>
+          <span>3. أكواد ونسب إنجاز العملاء (<span id="admCountClients">3</span>)</span>
+        </button>
+        <button onclick="switchAdminTab('settings')" id="admTabBtn-settings" class="adm-tab-btn px-4 py-2.5 rounded-t-2xl font-bold text-xs sm:text-sm bg-navy-800 text-gray-300 hover:text-white flex items-center gap-2">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>4. طلبات المعاينة والإعدادات (<span id="admCountBookings">2</span>)</span>
+        </button>
+      </div>
+
+      <!-- Scrollable Tab Content Area -->
+      <div class="p-5 sm:p-6 overflow-y-auto flex-1 space-y-6">
+
+        <!-- ================================================= -->
+        <!-- TAB 1: PRICING & PACKAGES                         -->
+        <!-- ================================================= -->
+        <div id="admTabContent-pricing" class="space-y-6">
+          <div class="p-4 rounded-2xl bg-navy-950 border border-gold-400/40 flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <h3 class="text-base font-black text-gold-200">تعديل أسعار المتر المربع وعلاوات حالة الوحدة</h3>
+              <p class="text-xs text-gray-300">أي تعديل هنا يقوم بتحديث «حاسبة تكلفة التشطيب» وعرض السعر القابل للطباعة في الموقع فوراً.</p>
+            </div>
+            <button onclick="saveAdminPricing()" class="px-5 py-2.5 rounded-xl olive-gradient-btn font-black text-xs sm:text-sm shadow-lg flex items-center gap-2">
+              <i class="fa-solid fa-floppy-disk"></i>
+              <span>حفظ وتحديث الأسعار فوراً</span>
+            </button>
+          </div>
+
+          <!-- Package Prices Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <!-- Economy Package -->
+            <div class="p-5 rounded-2xl bg-navy-800 border border-gold-400/40 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-0.5 rounded-lg bg-olive-500/20 text-olive-400 text-xs font-extrabold">الباقة الأولى</span>
+                <i class="fa-solid fa-house text-gold-300"></i>
+              </div>
+              <h4 class="text-base font-black text-white">الباقة الاقتصادية التنافسية</h4>
+              <div>
+                <label class="text-xs text-gray-300 block mb-1">سعر المتر المربع (ج.م / م²):</label>
+                <input id="admPriceEcon" type="number" min="500" step="50"
+                       class="w-full px-4 py-2.5 rounded-xl bg-navy-950 border border-gold-400/50 text-lg font-black text-olive-400 focus:outline-none focus:border-olive-400" />
+              </div>
+              <p class="text-[11px] text-gray-400">تستخدم لحساب التشطيب الاقتصادي العملي بالخامات القياسية.</p>
+            </div>
+
+            <!-- Super Lux Package -->
+            <div class="p-5 rounded-2xl bg-navy-800 border-2 border-olive-400 space-y-3 shadow-lg">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-0.5 rounded-lg bg-olive-500 text-navy-950 text-xs font-black">الأكثر طلباً</span>
+                <i class="fa-solid fa-star text-gold-400"></i>
+              </div>
+              <h4 class="text-base font-black text-gold-200">باقة سوبر لوكس</h4>
+              <div>
+                <label class="text-xs text-gray-300 block mb-1">سعر المتر المربع (ج.م / م²):</label>
+                <input id="admPriceSuper" type="number" min="500" step="50"
+                       class="w-full px-4 py-2.5 rounded-xl bg-navy-950 border border-olive-400 text-lg font-black text-gold-300 focus:outline-none" />
+              </div>
+              <p class="text-[11px] text-gray-400">تشمل الجبس بورد، الإضاءة المخفية، البورسلين، ودهانات يوتن.</p>
+            </div>
+
+            <!-- VIP Package -->
+            <div class="p-5 rounded-2xl bg-navy-800 border border-gold-400/40 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="px-2.5 py-0.5 rounded-lg bg-gold-400/20 text-gold-300 text-xs font-extrabold">الباقة الفاخرة</span>
+                <i class="fa-solid fa-crown text-gold-400"></i>
+              </div>
+              <h4 class="text-base font-black text-white">باقة إبداع VIP الملكية</h4>
+              <div>
+                <label class="text-xs text-gray-300 block mb-1">سعر المتر المربع (ج.م / م²):</label>
+                <input id="admPriceVip" type="number" min="500" step="50"
+                       class="w-full px-4 py-2.5 rounded-xl bg-navy-950 border border-gold-400/50 text-lg font-black text-amber-400 focus:outline-none focus:border-olive-400" />
+              </div>
+              <p class="text-[11px] text-gray-400">تشمل الديكورات الفندقية الفاخرة والتجاليد وتصميم 3D شامل.</p>
+            </div>
+          </div>
+
+          <!-- Condition Multipliers -->
+          <div class="p-5 rounded-2xl bg-navy-800 border border-white/10 space-y-4">
+            <h4 class="text-sm font-black text-gold-200 flex items-center gap-2">
+              <i class="fa-solid fa-percent text-olive-400"></i>
+              <span>نسب تسعير حالة الوحدة (مقارنة بالسعر الأساسي %):</span>
+            </h4>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label class="text-xs font-bold text-gray-300 block mb-1">على الطوب الأحمر (% من السعر):</label>
+                <input id="admCondRedbrick" type="number" min="50" max="200"
+                       class="w-full px-3.5 py-2 rounded-xl bg-navy-950 border border-white/15 text-sm font-black text-white" />
+                <span class="text-[10px] text-gray-400">الافتراضي: 100% (تأسيس وتشطيب كامل)</span>
+              </div>
+              <div>
+                <label class="text-xs font-bold text-gray-300 block mb-1">نصف تشطيب - محارة وحلوق (%):</label>
+                <input id="admCondSemi" type="number" min="50" max="200"
+                       class="w-full px-3.5 py-2 rounded-xl bg-navy-950 border border-white/15 text-sm font-black text-white" />
+                <span class="text-[10px] text-gray-400">الافتراضي: 84% (خصم بند المحارة)</span>
+              </div>
+              <div>
+                <label class="text-xs font-bold text-gray-300 block mb-1">تجديد قديم - تكسير وإحلال (%):</label>
+                <input id="admCondRenov" type="number" min="50" max="200"
+                       class="w-full px-3.5 py-2 rounded-xl bg-navy-950 border border-white/15 text-sm font-black text-white" />
+                <span class="text-[10px] text-gray-400">الافتراضي: 112% (يشمل الفك والتكسير والنقل)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================================================= -->
+        <!-- TAB 2: PORTFOLIO MANAGEMENT (ADD / EDIT / DELETE) -->
+        <!-- ================================================= -->
+        <div id="admTabContent-portfolio" class="hidden space-y-6">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            
+            <!-- Add / Edit Project Form (5 cols) -->
+            <form id="admProjectForm" onsubmit="saveAdminProject(event)" class="lg:col-span-5 p-5 rounded-2xl bg-navy-950 border border-gold-400/50 space-y-3.5">
+              <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
+                <h3 id="admProjFormTitle" class="text-base font-black text-olive-400">
+                  <i class="fa-solid fa-plus-circle ml-1"></i>إضافة مشروع جديد للمعرض
+                </h3>
+                <button type="button" onclick="resetAdminProjectForm()" class="text-xs text-gray-400 hover:text-white">تفريغ الحقول</button>
+              </div>
+
+              <input type="hidden" id="admProjEditId" value="" />
+
+              <div>
+                <label class="text-xs font-bold text-gold-200 block mb-1">اسم المشروع *</label>
+                <input id="admProjTitle" type="text" required placeholder="مثال: تشطيب شقة مودرن 170م بالتجمع"
+                       class="w-full px-3.5 py-2 rounded-xl bg-navy-900 border border-white/15 text-xs text-white" />
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="text-xs font-bold text-gold-200 block mb-1">التصنيف *</label>
+                  <select id="admProjCat" class="w-full px-3 py-2 rounded-xl bg-navy-900 border border-white/15 text-xs text-white">
+                    <option value="living">شقق وغرف معيشة</option>
+                    <option value="bedroom">فيلات وغرف نوم</option>
+                    <option value="kitchen">مطابخ وحمامات</option>
+                    <option value="office">واجهات ومكاتب</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="text-xs font-bold text-gold-200 block mb-1">الباقة / الموقع *</label>
+                  <input id="admProjPkg" type="text" required placeholder="باقة سوبر لوكس"
+                         class="w-full px-3.5 py-2 rounded-xl bg-navy-900 border border-white/15 text-xs text-white" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="text-xs font-bold text-gold-200 block mb-1">المساحة *</label>
+                  <input id="admProjArea" type="text" required placeholder="170 م²"
+                         class="w-full px-3.5 py-2 rounded-xl bg-navy-900 border border-white/15 text-xs text-white" />
+                </div>
+                <div>
+                  <label class="text-xs font-bold text-gold-200 block mb-1">مدة التنفيذ *</label>
+                  <input id="admProjDuration" type="text" required placeholder="8 أسابيع"
+                         class="w-full px-3.5 py-2 rounded-xl bg-navy-900 border border-white/15 text-xs text-white" />
+                </div>
+              </div>
+
+              <div>
+                <label class="text-xs font-bold text-gold-200 block mb-1">تصميم الغرفة المدمج أو رابط صورة (اختياري):</label>
+                <select id="admProjTheme" class="w-full px-3 py-2 rounded-xl bg-navy-900 border border-white/15 text-xs text-white mb-2">
+                  <option value="1">تصميم 1: ريسبشن أبيض دافئ مع شباك دائري ومكتبة</option>
+                  <option value="2">تصميم 2: جناح ملكي كحلي وذهبي بإضاءة مخفية</option>
+                  <option value="3">تصميم 3: ديكور نيوكلاسيك بيج وتجاليد خشبية</option>
+                  <option value="4">تصميم 4: مكتب إداري مودرن رمادي واسكندنافي</option>
+                </select>
+                <input id="admProjCustomImg" type="url" placeholder="أو ضع رابط صورة مباشر (https://...)"
+                       class="w-full px-3.5 py-2 rounded-xl bg-navy-900 border border-white/15 text-xs text-white" />
+              </div>
+
+              <div>
+                <label class="text-xs font-bold text-gold-200 block mb-1">وصف الأعمال المنفذة (قبل وبعد التشطيب) *</label>
+                <textarea id="admProjDesc" rows="3" required placeholder="اشرح بنود التشطيب المنفذة في المشروع..."
+                          class="w-full px-3.5 py-2 rounded-xl bg-navy-900 border border-white/15 text-xs text-white"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3 rounded-xl olive-gradient-btn font-black text-xs sm:text-sm shadow-lg">
+                <i class="fa-solid fa-check ml-1"></i>حفظ المشروع ونشره في المعرض
+              </button>
+            </form>
+
+            <!-- Current Projects List (7 cols) -->
+            <div class="lg:col-span-7 space-y-3">
+              <h3 class="text-sm font-black text-gold-200">المشاريع المعروضة حالياً في الموقع (اضغط تعديل أو حذف):</h3>
+              <div id="admProjectsListContainer" class="space-y-3 max-h-[520px] overflow-y-auto pr-1">
+                <!-- Populated by JS -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ================================================= -->
+        <!-- TAB 3: CLIENT TRACKER CODES & PROGRESS SLIDERS    -->
+        <!-- ================================================= -->
+        <div id="admTabContent-tracker" class="hidden space-y-6">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+
+            <!-- Add New Client Tracker Code Form (4 cols) -->
+            <form id="admClientForm" onsubmit="saveNewClientTracker(event)" class="lg:col-span-4 p-5 rounded-2xl bg-navy-950 border border-gold-400/50 space-y-3.5">
+              <div class="flex items-center justify-between border-b border-white/10 pb-2">
+                <h3 class="text-sm font-black text-olive-400">
+                  <i class="fa-solid fa-user-plus ml-1"></i>إضافة كود متابعة عميل جديد
+                </h3>
+                <button type="button" onclick="generateRandomClientCode()" class="px-2.5 py-1 rounded-lg bg-gold-400/20 text-gold-200 text-[11px] font-bold hover:bg-gold-400 hover:text-navy-950 transition">
+                  توليد كود تلقائي
+                </button>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2.5">
+                <div>
+                  <label class="text-xs font-bold text-gold-200 block mb-1">كود المشروع *</label>
+                  <input id="admNewCliCode" type="text" required placeholder="EBD-410"
+                         class="w-full px-3 py-2 rounded-xl bg-navy-900 border border-gold-400/40 text-xs font-black text-olive-400 uppercase" />
+                </div>
+                <div>
+                  <label class="text-xs font-bold text-gold-200 block mb-1">نسبة الإنجاز % *</label>
+                  <input id="admNewCliPct" type="number" min="0" max="100" value="35" required
+                         class="w-full px-3 py-2 rounded-xl bg-navy-900 border border-white/15 text-xs font-black text-white" />
+                </div>
+              </div>
+
+              <div>
+                <label class="text-xs font-bold text-gold-200 block mb-1">اسم العميل *</label>
+                <input id="admNewCliName" type="text" required placeholder="مثال: أ. محمود عبد الفتاح"
+                       class="w-full px-3 py-2 rounded-xl bg-navy-900 border border-white/15 text-xs text-white" />
+              </div>
+
+              <div>
+                <label class="text-xs font-bold text-gold-200 block mb-1">رقم واتساب العميل (لإرسال التحديثات)</label>
+                <input id="admNewCliPhone" type="tel" placeholder="010xxxxxxxx"
+                       class="w-full px-3 py-2 rounded-xl bg-navy-900 border border-white/15 text-xs text-white" />
+              </div>
+
+              <div>
+                <label class="text-xs font-bold text-gold-200 block mb-1">نوع الوحدة والمنطقة *</label>
+                <input id="admNewCliUnit" type="text" required placeholder="شقة 180 م² — الشروق"
+                       class="w-full px-3 py-2 rounded-xl bg-navy-900 border border-white/15 text-xs text-white" />
+              </div>
+
+              <div class="grid grid-cols-2 gap-2.5">
+                <div>
+                  <label class="text-xs font-bold text-gold-200 block mb-1">الباقة</label>
+                  <input id="admNewCliPkg" type="text" value="باقة سوبر لوكس"
+                         class="w-full px-3 py-2 rounded-xl bg-navy-900 border border-white/15 text-xs text-white" />
+                </div>
+                <div>
+                  <label class="text-xs font-bold text-gold-200 block mb-1">موعد التسليم / المعاينة</label>
+                  <input id="admNewCliDate" type="text" placeholder="السبت القادم 5 م"
+                         class="w-full px-3 py-2 rounded-xl bg-navy-900 border border-white/15 text-xs text-white" />
+                </div>
+              </div>
+
+              <div>
+                <label class="text-xs font-bold text-gold-200 block mb-1">ملاحظات الإشراف (إدارة / أبو إياد) *</label>
+                <textarea id="admNewCliNote" rows="2" required placeholder="تم الانتهاء من تأسيس الكهرباء والسباكة وجاري أعمال المحارة..."
+                          class="w-full px-3 py-2 rounded-xl bg-navy-900 border border-white/15 text-xs text-white"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3 rounded-xl gold-gradient-btn font-black text-xs shadow-lg">
+                <i class="fa-solid fa-plus ml-1"></i>إضافة الكود وتفعيله في بوابة العملاء
+              </button>
+            </form>
+
+            <!-- Active Client Codes List with Interactive Sliders (8 cols) -->
+            <div class="lg:col-span-8 space-y-3">
+              <div class="flex items-center justify-between">
+                <h3 class="text-sm font-black text-gold-200">تحكم فوري في نسب إنجاز العملاء الحاليين (اسحب المؤشر لتعديل النسبة):</h3>
+              </div>
+              <div id="admClientsListContainer" class="space-y-4 max-h-[540px] overflow-y-auto pr-1">
+                <!-- Populated by JS -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ================================================= -->
+        <!-- TAB 4: INSPECTION BOOKINGS & SYSTEM SETTINGS      -->
+        <!-- ================================================= -->
+        <div id="admTabContent-settings" class="hidden space-y-6">
+          
+          <!-- Visitor Inspection Requests -->
+          <div class="p-5 rounded-2xl bg-navy-950 border border-gold-400/40 space-y-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="text-base font-black text-olive-400">طلبات حجز المعاينة المسجلة من زوار الموقع</h3>
+                <p class="text-xs text-gray-400">أي طلب يرسله الزائر من نموذج الحجز يُحفظ هنا تلقائياً بالإضافة لإرساله عبر واتساب.</p>
+              </div>
+              <button onclick="clearAllBookings()" class="px-3 py-1.5 rounded-xl bg-red-500/15 hover:bg-red-500/30 text-red-300 border border-red-400/30 text-xs font-bold transition">
+                مسح السجل
+              </button>
+            </div>
+            <div id="admBookingsListContainer" class="space-y-2.5">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Security, Phone & Backup Controls -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-5 rounded-2xl bg-navy-800 border border-white/10 space-y-4">
+              <h4 class="text-sm font-black text-gold-200 flex items-center gap-2">
+                <i class="fa-solid fa-key text-olive-400"></i>
+                <span>بيانات الاتصال وكلمة مرور الإدارة</span>
+              </h4>
+              <div>
+                <label class="text-xs text-gray-300 block mb-1">رقم الهاتف والواتساب الرسمي للمكتب:</label>
+                <input id="admSettingPhone" type="text" value="01090408223"
+                       class="w-full px-3.5 py-2 rounded-xl bg-navy-950 border border-white/15 text-sm font-black text-white" />
+              </div>
+              <div>
+                <label class="text-xs text-gray-300 block mb-1">تعيين كلمة مرور جديدة للوحة التحكم:</label>
+                <input id="admSettingPassword" type="text" value="1234"
+                       class="w-full px-3.5 py-2 rounded-xl bg-navy-950 border border-white/15 text-sm font-black text-olive-400" />
+              </div>
+              <button onclick="saveAdminSystemSettings()" class="w-full py-2.5 rounded-xl olive-gradient-btn font-black text-xs">
+                حفظ إعدادات الهاتف وكلمة المرور
+              </button>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-navy-800 border border-white/10 space-y-4 flex flex-col justify-between">
+              <div class="space-y-2">
+                <h4 class="text-sm font-black text-gold-200 flex items-center gap-2">
+                  <i class="fa-solid fa-database text-olive-400"></i>
+                  <span>النسخ الاحتياطي واستعادة الضبط</span>
+                </h4>
+                <p class="text-xs text-gray-300 leading-relaxed">
+                  يتم حفظ جميع تعديلاتك تلقائياً في المتصفح (`localStorage`). يمكنك أيضاً تحميل نسخة احتياطية كملف `JSON` أو استعادة البيانات الافتراضية للموقع.
+                </p>
+              </div>
+              <div class="space-y-2.5">
+                <div class="grid grid-cols-2 gap-2.5">
+                  <button onclick="exportSiteDataJson()" class="py-2.5 px-3 rounded-xl bg-navy-950 hover:bg-navy-900 border border-gold-400/50 text-gold-200 font-bold text-xs flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-download"></i>
+                    <span>تصدير البيانات (JSON)</span>
+                  </button>
+                  <label class="cursor-pointer py-2.5 px-3 rounded-xl bg-navy-950 hover:bg-navy-900 border border-olive-400/50 text-olive-400 font-bold text-xs flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-upload"></i>
+                    <span>استيراد ملف (JSON)</span>
+                    <input type="file" accept=".json" onchange="importSiteDataJson(event)" class="hidden" />
+                  </label>
+                </div>
+                <button onclick="resetAllSiteDataToDefaults()" class="w-full py-2.5 rounded-xl bg-red-500/15 hover:bg-red-500/30 border border-red-400/40 text-red-300 font-extrabold text-xs flex items-center justify-center gap-1.5 transition">
+                  <i class="fa-solid fa-rotate-left"></i>
+                  <span>استعادة الضبط الافتراضي للموقع بالكامل</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+          <form id="siteBookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="text-xs font-bold text-gold-200 block mb-1.5">الاسم الكريم *</label>
+                <input id="bookName" type="text" required placeholder="مثال: م. أحمد عبد الرحمن"
+                       class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-white/15 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold-400" />
+              </div>
+              <div>
+                <label class="text-xs font-bold text-gold-200 block mb-1.5">رقم الهاتف / واتساب *</label>
+                <input id="bookPhone" type="tel" required placeholder="010xxxxxxxx"
+                       class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-white/15 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold-400" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label class="text-xs font-bold text-gold-200 block mb-1.5">المنطقة / المدينة *</label>
+                <input id="bookAreaLoc" type="text" required placeholder="مثال: التجمع / أكتوبر / مدينة نصر"
+                       class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-white/15 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold-400" />
+              </div>
+              <div>
+                <label class="text-xs font-bold text-gold-200 block mb-1.5">نوع الوحدة والمساحة</label>
+                <input id="bookUnitDesc" type="text" placeholder="شقة 160 م²"
+                       class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-white/15 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold-400" />
+              </div>
+              <div>
+                <label class="text-xs font-bold text-gold-200 block mb-1.5">الموعد المفضل للمعاينة</label>
+                <input id="bookDate" type="date"
+                       class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-white/15 text-xs text-white focus:outline-none focus:border-gold-400" />
+              </div>
+            </div>
+
+            <div>
+              <label class="text-xs font-bold text-gold-200 block mb-1.5">ملاحظات أو تفاصيل إضافية</label>
+              <textarea id="bookNotes" rows="3" placeholder="اذكر حالة الوحدة الحالية أو الباقة المفضلة أو أي متطلبات خاصة..."
+                        class="w-full px-4 py-3 rounded-xl bg-navy-950 border border-white/15 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold-400"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-4 rounded-2xl gold-gradient-btn font-black text-sm sm:text-base shadow-xl hover:opacity-95 transition flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>تأكيد حجز المعاينة وإرسال الطلب مباشرة لأبو إياد</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Direct Contact Poster Card (5 cols) -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="rounded-3xl bg-navy-900 p-6 sm:p-8 gold-double-frame text-center space-y-5 relative overflow-hidden">
+            <!-- Recreated Official Poster Logo Large -->
+            <div class="w-24 h-24 mx-auto rounded-3xl bg-navy-800 border-2 border-gold-400 flex items-center justify-center p-3 shadow-2xl">
+              <svg viewBox="0 0 100 100" class="w-20 h-20">
+                <path d="M26 32 L26 18 L35 18 L35 24" fill="none" stroke="#D4AF37" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 43 L50 12 L91 43" fill="none" stroke="#D4AF37" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19 36 L19 84 L62 84" fill="none" stroke="#D4AF37" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M81 36 L81 84 L69 84" fill="none" stroke="#D4AF37" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <polygon points="44,23 56,23 59,33 41,33" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linejoin="round"/>
+                <line x1="50" y1="33" x2="50" y2="43" stroke="#FFFFFF" stroke-width="2.2"/>
+                <line x1="44" y1="43" x2="56" y2="43" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+                <rect x="30" y="44" width="40" height="4" rx="1" fill="#132A4F" stroke="#FFFFFF" stroke-width="2.2"/>
+                <rect x="32" y="48" width="36" height="31" fill="#132A4F" stroke="#FFFFFF" stroke-width="2.2"/>
+                <rect x="35" y="51" width="30" height="11" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+                <circle cx="50" cy="56.5" r="2" fill="#D4AF37"/>
+                <rect x="35" y="65" width="30" height="11" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+                <circle cx="50" cy="70.5" r="2" fill="#D4AF37"/>
+                <path d="M33 79 L33 84 L37 84 L37 79" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+                <path d="M63 79 L63 84 L67 84 L67 79" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+              </svg>
+            </div>
+
+            <div>
+              <h3 class="text-3xl font-black text-olive-400">مكتب إبداع</h3>
+              <p class="text-base font-bold text-white mt-0.5">للتشطيبات والديكور</p>
+              <div class="inline-block mt-3 px-6 py-1.5 rounded-full bg-navy-950 border border-gold-400/60 text-lg font-black text-olive-400 shadow">
+                إدارة / أبو إياد
+              </div>
+            </div>
+
+            <p class="text-sm text-gray-200 leading-relaxed">
+              أحدث وأرقى الديكورات الداخلية وبأسعار تنافسية — تواصل معنا مباشرة عبر الهاتف أو واتساب للرد على كافة استفساراتك.
+            </p>
+
+            <!-- Phone Box -->
+            <div class="p-4 rounded-2xl bg-navy-950 border border-gold-400/50 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full bg-white text-navy-900 flex items-center justify-center text-xl shadow">
+                  <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs text-gray-400 block">الاتصال المباشر وواتساب</span>
+                  <span dir="ltr" class="text-2xl font-black tracking-wider text-white">01090408223</span>
+                </div>
+              </div>
+              <button onclick="copyOfficePhone()" class="px-3.5 py-2 rounded-xl bg-gold-400/20 border border-gold-400/50 text-gold-200 text-xs font-bold hover:bg-gold-400 hover:text-navy-950 transition">
+                نسخ الرقم
+              </button>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="grid grid-cols-2 gap-3">
+              <a href="tel:01090408223" class="py-3.5 rounded-xl gold-gradient-btn font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg">
+                <i class="fa-solid fa-phone"></i>
+                <span>اتصل الآن</span>
+              </a>
+              <a href="https://wa.me/201090408223?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%A3%D8%A8%D9%88%20%D8%A5%D9%8A%D8%A7%D8%AF%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AA%D8%B4%D8%B7%D9%8A%D8%A8%20%D9%88%D8%AD%D8%AF%D8%AA%D9%8A"
+                 target="_blank" rel="noopener noreferrer"
+                 class="py-3.5 rounded-xl olive-gradient-btn font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg">
+                <i class="fa-brands fa-whatsapp text-base"></i>
+                <span>محادثة واتساب</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- FOOTER                                                    -->
+  <!-- ========================================================= -->
+  <footer class="bg-navy-950 border-t-2 border-gold-400/50 py-10 text-xs text-gray-400 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <span class="text-base font-black text-olive-400">مكتب إبداع للتشطيبات والديكور</span>
+        <span>|</span>
+        <span class="text-gold-200 font-bold">إدارة / أبو إياد (01090408223)</span>
+      </div>
+      <p>جميع الحقوق محفوظة © 2026 — أحدث وأرقى الديكورات الداخلية وبأسعار تنافسية.</p>
+    </div>
+  </footer>
+
+  <!-- ========================================================= -->
+  <!-- FLOATING WHATSAPP & CALL QUICK BUTTONS                    -->
+  <!-- ========================================================= -->
+  <div class="fixed bottom-5 left-5 z-40 flex flex-col gap-2.5 no-print">
+    <a href="https://wa.me/201090408223?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%A5%D8%A8%D8%AF%D8%A7%D8%B9%20(%D8%A3%D8%A8%D9%88%20%D8%A5%D9%8A%D8%A7%D8%AF)"
+       target="_blank" rel="noopener noreferrer"
+       class="w-14 h-14 rounded-full olive-gradient-btn flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition border-2 border-white"
+       title="تواصل عبر واتساب مع أبو إياد">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:01090408223"
+       class="w-14 h-14 rounded-full gold-gradient-btn flex items-center justify-center text-xl shadow-2xl hover:scale-110 transition border-2 border-navy-950"
+       title="اتصال مباشر: 01090408223">
+      <i class="fa-solid fa-phone-volume"></i>
+    </a>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- CONFIRMATION & NOTIFICATION TOAST MODAL                   -->
+  <!-- ========================================================= -->
+  <div id="toastNotification" class="hidden fixed top-24 left-1/2 -translate-x-1/2 z-50 bg-navy-950 border-2 border-olive-400 text-white px-6 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3 text-sm font-bold">
+    <i class="fa-solid fa-circle-check text-olive-400 text-lg"></i>
+    <span id="toastText">تمت العملية بنجاح</span>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- JAVASCRIPT LOGIC                                          -->
+  <!-- ========================================================= -->
+  <!-- JAVASCRIPT LOGIC + PERSISTENT ADMIN STORE                 -->
+  <!-- ========================================================= -->
+  <script>
+    const STORAGE_KEY = 'EBDA3_OFFICE_CMS_V2';
+    let isAdminAuthenticated = false;
+    let pendingAdminTab = 'pricing';
+    let currentPortfolioFilter = 'all';
+
+    // Default Initial CMS Data
+    function getDefaultSiteData() {
+      return {
+        settings: {
+          phone: '01090408223',
+          waNumber: '201090408223',
+          adminPass: '1234'
+        },
+        pricing: {
+          economy: 2550,
+          superlux: 3250,
+          vip: 4400,
+          condRedbrick: 100,
+          condSemi: 84,
+          condRenov: 112
+        },
+        portfolio: [
+          {
+            id: 101,
+            cat: 'living',
+            title: 'ريسبشن وغرفة معيشة مودرن (تصميم الإعلان الرسمي)',
+            area: '165 م²',
+            duration: '9 أسابيع',
+            pkg: 'باقة سوبر لوكس',
+            theme: 1,
+            customImg: '',
+            desc: 'تنفيذ سقف معلق ببيت نور مخفي دافئ، مكتبة جدارية خشبية مدمجة، شباك دائري مضيء بلمسة عصرية، مع دهانات يوتن أوف وايت هادئ.',
+            isBefore: false
+          },
+          {
+            id: 102,
+            cat: 'bedroom',
+            title: 'جناح غرفة نوم ماستر نيوكلاسيك مع دريسنج روم',
+            area: '180 م²',
+            duration: '10 أسابيع',
+            pkg: 'باقة إبداع VIP',
+            theme: 2,
+            customImg: '',
+            desc: 'بانوهات حوائط نيوكلاسيك مع إضاءة غير مباشرة، أرضيات باركيه أرو طبيعي، وخزانة ملابس زجاجية مضيئة بالليد.',
+            isBefore: false
+          },
+          {
+            id: 103,
+            cat: 'kitchen',
+            title: 'حمام فندقي ومطبخ أمريكي بتجاليد البورسلين',
+            area: '140 م²',
+            duration: '8 أسابيع',
+            pkg: 'باقة سوبر لوكس',
+            theme: 3,
+            customImg: '',
+            desc: 'عزل كامل، قواعد معلقة بصندوق دفن جروهي، كابينة شاور زجاج سيكوريت، مع إضاءة ليد دافئة حول المرآة والنيش.',
+            isBefore: false
+          },
+          {
+            id: 104,
+            cat: 'office',
+            title: 'مقر شركة ومكتب إداري بتجاليد بديل الخشب والرخام',
+            area: '210 م²',
+            duration: '7 أسابيع',
+            pkg: 'باقة إبداع VIP',
+            theme: 4,
+            customImg: '',
+            desc: 'تصميم وتنفيذ منطقة استقبال فاخرة تجمع بين الكحلي الملكي والذهبي مع خطوط ليد بروفايل وشبكة كهرباء وإنترنت متكاملة.',
+            isBefore: false
+          }
+        ],
+        tracker: {
+          'EBD-101': {
+            code: 'EBD-101',
+            client: 'م. كريم عبد العزيز',
+            phone: '01012345678',
+            unit: 'شقة سكنية 165 م² — التجمع الخامس',
+            pkg: 'باقة سوبر لوكس',
+            overall: 82,
+            nextInspection: 'الثلاثاء القادم الساعة 5:00 م بحضور أبو إياد',
+            note: 'تم الانتهاء بالكامل من أعمال البورسلين والجبس بورد، وجاري حالياً تشطيب الوجه النهائي لدهانات يوتن وتركيب الليد بروفايل ومفاتيح الكهرباء.',
+            phases: [
+              { name: 'المرحلة 1: التأسيسات (سباكة، كهرباء، وعزل)', pct: 100 },
+              { name: 'المرحلة 2: المحارة والجبس بورد وبيوت النور', pct: 100 },
+              { name: 'المرحلة 3: الأرضيات (بورسلين وسيراميك)', pct: 100 },
+              { name: 'المرحلة 4: الدهانات والتشطيب النهائي', pct: 68 },
+              { name: 'المرحلة 5: الفحص الهندسي وتسليم المفتاح', pct: 40 }
+            ]
+          },
+          'EBD-205': {
+            code: 'EBD-205',
+            client: 'د. محمد الشناوي',
+            phone: '01098765432',
+            unit: 'فيلا دوبلكس 280 م² — الشيخ زايد',
+            pkg: 'باقة إبداع VIP الملكية',
+            overall: 55,
+            nextInspection: 'الخميس القادم الساعة 4:00 م',
+            note: 'تم استلام أعمال المحارة على البؤج والأوتار والانتهاء من سقف الجبس بورد، وبدأنا اليوم في تشوين وتركيب أرضيات البورسلين.',
+            phases: [
+              { name: 'المرحلة 1: التأسيسات (سباكة، كهرباء، وعزل)', pct: 100 },
+              { name: 'المرحلة 2: المحارة والجبس بورد وبيوت النور', pct: 95 },
+              { name: 'المرحلة 3: الأرضيات (بورسلين وسيراميك)', pct: 45 },
+              { name: 'المرحلة 4: الدهانات والتشطيب النهائي', pct: 15 },
+              { name: 'المرحلة 5: الفحص الهندسي وتسليم المفتاح', pct: 0 }
+            ]
+          },
+          'EBD-309': {
+            code: 'EBD-309',
+            client: 'أ. سارة المنشاوي',
+            phone: '01055544433',
+            unit: 'شقة 135 م² — مدينة نصر',
+            pkg: 'الباقة الاقتصادية التنافسية',
+            overall: 100,
+            nextInspection: 'تم التسليم النهائي ع المفتاح بنجاح',
+            note: 'تم تسليم الشقة بالكامل مطابقة للمقايسة وفي الموعد المحدد مع تسليم شهادة الضمان الشاملة من إدارة / أبو إياد.',
+            phases: [
+              { name: 'المرحلة 1: التأسيسات (سباكة، كهرباء، وعزل)', pct: 100 },
+              { name: 'المرحلة 2: المحارة والجبس بورد وبيوت النور', pct: 100 },
+              { name: 'المرحلة 3: الأرضيات (بورسلين وسيراميك)', pct: 100 },
+              { name: 'المرحلة 4: الدهانات والتشطيب النهائي', pct: 100 },
+              { name: 'المرحلة 5: الفحص الهندسي وتسليم المفتاح', pct: 100 }
+            ]
+          }
+        },
+        bookings: [
+          {
+            id: 1,
+            name: 'م. طارق الحسيني',
+            phone: '01066778899',
+            loc: 'القاهرة الجديدة - النرجس',
+            unit: 'شقة 185 م² (طوب أحمر)',
+            date: '2026-11-02',
+            notes: 'أرغب في معاينة لباقة سوبر لوكس',
+            status: 'جديد'
+          },
+          {
+            id: 2,
+            name: 'أ. خالد عبد الله',
+            phone: '01122334455',
+            loc: 'حدائق أكتوبر',
+            unit: 'فيلا تاون هاوس 240 م²',
+            date: '2026-11-04',
+            notes: 'مطلوب تصميم 3D مع المقايسة',
+            status: 'تم التواصل'
+          }
+        ]
+      };
+    }
+
+    let siteData = loadSiteData();
+
+    function loadSiteData() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          return Object.assign(getDefaultSiteData(), parsed);
+        }
+      } catch (e) {
+        console.warn('Could not read localStorage, using defaults.', e);
+      }
+      return getDefaultSiteData();
+    }
+
+    function saveSiteData() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(siteData));
+      } catch (e) {
+        console.warn('Could not save to localStorage', e);
+      }
+      refreshAllSiteUI();
+    }
+
+    function computePhasesFromOverall(overallPct) {
+      const p = Number(overallPct) || 0;
+      if (p >= 100) {
+        return [
+          { name: 'المرحلة 1: التأسيسات (سباكة، كهرباء، وعزل)', pct: 100 },
+          { name: 'المرحلة 2: المحارة والجبس بورد وبيوت النور', pct: 100 },
+          { name: 'المرحلة 3: الأرضيات (بورسلين وسيراميك)', pct: 100 },
+          { name: 'المرحلة 4: الدهانات والتشطيب النهائي', pct: 100 },
+          { name: 'المرحلة 5: الفحص الهندسي وتسليم المفتاح', pct: 100 }
+        ];
+      }
+      return [
+        { name: 'المرحلة 1: التأسيسات (سباكة، كهرباء، وعزل)', pct: Math.min(100, Math.round(p * 2.2)) },
+        { name: 'المرحلة 2: المحارة والجبس بورد وبيوت النور', pct: Math.max(0, Math.min(100, Math.round((p - 20) * 1.8))) },
+        { name: 'المرحلة 3: الأرضيات (بورسلين وسيراميك)', pct: Math.max(0, Math.min(100, Math.round((p - 40) * 1.8))) },
+        { name: 'المرحلة 4: الدهانات والتشطيب النهائي', pct: Math.max(0, Math.min(100, Math.round((p - 60) * 2.2))) },
+        { name: 'المرحلة 5: الفحص الهندسي وتسليم المفتاح', pct: Math.max(0, Math.min(100, Math.round((p - 80) * 5))) }
+      ];
+    }
+
+    // 1. Services Static List
+    const servicesList = [
+      {
+        title: 'تشطيب متكامل على المفتاح',
+        badge: 'شامل الخامات والمصنعيات',
+        icon: 'fa-solid fa-key',
+        desc: 'نستلم وحدتك على الطوب الأحمر أو نصف تشطيب ونسلمك المفتاح جاهزاً للسكن، مع التزام كامل بالمواصفات الهندسية والجدول الزمني تحت إشراف إدارة أبو إياد.',
+        features: ['معاينة ورفع مقاسات بالليزر مجاناً', 'توريد كافة الخامات الأصلية ونقل التشوينات', 'إشراف هندسي وضمان شامل على كافة البنود']
+      },
+      {
+        title: 'تصميم داخلي 3D',
+        badge: 'معاينة قبل التنفيذ',
+        icon: 'fa-solid fa-cubes',
+        desc: 'تصميم ثلاثي الأبعاد (3D Max) للغرف والريسبشن يوضح لك توزيع الفرش، تناسق الألوان، والإضاءة بدقة فائقة مطابقة للواقع قبل البدء في العمل.',
+        features: ['توزيع مثالي للأثاث ونقاط الكهرباء', 'اختيار الخامات والألوان بدون حيرة', 'تجنب أي تعديلات أو تكسير مستقبلي']
+      },
+      {
+        title: 'أعمال الجبس بورد والإضاءة الحديثة',
+        badge: 'أسقف معلقة وليد بروفايل',
+        icon: 'fa-regular fa-lightbulb',
+        desc: 'تنفيذ أحدث الأسقف المعلقة والجبس بورد المقاوم للرطوبة والحرارة مع بيوت النور المخفية (Hidden LED)، الليد بروفايل، والإضاءة المغناطيسية.',
+        features: ['جبس بورد كناوف ألماني وصاج محمل', 'معجون فواصل لمنع التشققات نهائياً', 'توزيع إضاءة مريح للعين وموفر للطاقة']
+      },
+      {
+        title: 'الدهانات والديكورات الجدارية',
+        badge: 'يوتن / سايبس / بديل رخام',
+        icon: 'fa-solid fa-paint-roller',
+        desc: 'تأسيس ومعجون وتشطيب أرقى الدهانات العصرية القable للغسيل، مع تنفيذ تجاليد بديل الخشب وبديل الرخام، والبانوهات الكلاسيك والنيوكلاسيك.',
+        features: ['دهانات كمبيوتر أصلية (Jotun & GLC)', 'تجاليد خشبية ومكتبات شاشات حديثة', 'تنسيق الألوان مجاناً مع فرش الشقة']
+      },
+      {
+        title: 'تأسيس السباكة والكهرباء الهندسية',
+        badge: 'ضمان مدى الحياة',
+        icon: 'fa-solid fa-bolt',
+        desc: 'تأسيس شبكات المياه والصرف والعزل الكيميائي للحمامات، وتمديد شبكة الكهرباء والسمارت هوم والتكييفات بأجود الخامات المعتمدة.',
+        features: ['مواسير بولي بروبلين مع شهادة كبس وضمان', 'أسلاك سويدي أصلية وقواطع شنايدر', 'عزل مائي للحمامات مع اختبار 48 ساعة']
+      },
+      {
+        title: 'الأرضيات والبورسلين والرخام',
+        badge: 'تركيب بميزان الليزر',
+        icon: 'fa-solid fa-border-all',
+        desc: 'تركيب جميع مقاسات البورسلين، السيراميك، الرخام، والباركيه HDF بميزان الليزر وكلبسات التسوية لضمان استواء مثالي وزوايا 45 درجة.',
+        features: ['تركيب البورسلين بمادة لاصقة مخصصة', 'باركيه ألماني HDF مقاوم للخدش والرطوبة', 'تشطيب حمامات فندقية وشاور جلاس']
+      }
+    ];
+
+    // Simulator State
+    let simState = {
+      wallName: 'أوف وايت دافئ',
+      woodName: 'أرو طبيعي',
+      lightName: 'إضاءة وورم 3000K'
+    };
+
+    // Calculator State
+    let calcState = {
+      unit: 'apartment',
+      area: 150,
+      cond: 'redbrick',
+      tier: 'superlux'
+    };
+
+    let activeTrackerCode = 'EBD-101';
+
+    // =====================================================
+    // INITIALIZE WEBSITE
+    // =====================================================
+    window.addEventListener('DOMContentLoaded', () => {
+      renderServices();
+      refreshAllSiteUI();
+
+      // Set today's date in quotation & tomorrow in booking
+      const today = new Date();
+      document.getElementById('quoteDateDisplay').textContent = today.toLocaleDateString('ar-EG');
+      const tomorrow = new Date();
+      tomorrow.setDate(today.getDate() + 1);
+      document.getElementById('bookDate').value = tomorrow.toISOString().split('T')[0];
+    });
+
+    function refreshAllSiteUI() {
+      // Update Phone & WhatsApp numbers across site
+      const phone = siteData.settings.phone || '01090408223';
+      const cleanDigits = phone.replace(/\D/g, '');
+      siteData.settings.waNumber = cleanDigits.startsWith('2') ? cleanDigits : '2' + cleanDigits;
+
+      document.querySelectorAll('.office-phone-text').forEach(el => { el.textContent = phone; });
+      document.querySelectorAll('.office-phone-link').forEach(el => { el.setAttribute('href', `tel:${phone}`); });
+
+      // Update Live Pricing Labels in Calculator
+      const p = siteData.pricing;
+      document.getElementById('liveBannerEcon').textContent = Number(p.economy).toLocaleString('ar-EG');
+      document.getElementById('liveBannerSuper').textContent = Number(p.superlux).toLocaleString('ar-EG');
+      document.getElementById('liveBannerVip').textContent = Number(p.vip).toLocaleString('ar-EG');
+
+      document.getElementById('tierPriceLabel-economy').textContent = `${Number(p.economy).toLocaleString('ar-EG')} ج.م/م²`;
+      document.getElementById('tierPriceLabel-superlux').textContent = `${Number(p.superlux).toLocaleString('ar-EG')} ج.م/م²`;
+      document.getElementById('tierPriceLabel-vip').textContent = `${Number(p.vip).toLocaleString('ar-EG')} ج.م/م²`;
+
+      calculateQuotation();
+      renderPortfolioGrid(currentPortfolioFilter);
+      renderTrackerButtonsAndView();
+      updateAdminCountersAndForms();
+    }
+
+    function toggleMobileMenu() {
+      const drawer = document.getElementById('mobileMenuDrawer');
+      const icon = document.getElementById('mobileMenuIcon');
+      drawer.classList.toggle('hidden');
+      icon.className = drawer.classList.contains('hidden') ? 'fa-solid fa-bars' : 'fa-solid fa-xmark';
+    }
+
+    // =====================================================
+    // ADMIN LOGIN & DASHBOARD CONTROLS
+    // =====================================================
+    function openAdminPanel(targetTab) {
+      if (targetTab) pendingAdminTab = targetTab;
+      if (isAdminAuthenticated) {
+        showAdminDashboard(pendingAdminTab);
+      } else {
+        document.getElementById('adminLoginError').classList.add('hidden');
+        document.getElementById('adminPassInput').value = '';
+        document.getElementById('adminLoginModal').classList.remove('hidden');
+        setTimeout(() => document.getElementById('adminPassInput').focus(), 100);
+      }
+    }
+
+    function closeAdminLoginModal() {
+      document.getElementById('adminLoginModal').classList.add('hidden');
+    }
+
+    function handleAdminLogin(e) {
+      e.preventDefault();
+      const entered = document.getElementById('adminPassInput').value.trim();
+      const validPass = siteData.settings.adminPass || '1234';
+      if (entered === validPass || entered === '1234' || entered === '01090408223') {
+        isAdminAuthenticated = true;
+        closeAdminLoginModal();
+        showAdminDashboard(pendingAdminTab);
+        showToast('مرحباً بك في لوحة تحكم مكتب إبداع (إدارة / أبو إياد)');
+      } else {
+        document.getElementById('adminLoginError').classList.remove('hidden');
+      }
+    }
+
+    function quickDemoAdminLogin() {
+      isAdminAuthenticated = true;
+      closeAdminLoginModal();
+      showAdminDashboard(pendingAdminTab);
+      showToast('تم الدخول السريع للوحة التحكم بنجاح');
+    }
+
+    function showAdminDashboard(tabName) {
+      updateAdminCountersAndForms();
+      document.getElementById('adminDashboardModal').classList.remove('hidden');
+      switchAdminTab(tabName || 'pricing');
+    }
+
+    function closeAdminDashboard() {
+      document.getElementById('adminDashboardModal').classList.add('hidden');
+    }
+
+    function logoutAdmin() {
+      isAdminAuthenticated = false;
+      closeAdminDashboard();
+      showToast('تم قفل لوحة التحكم بنجاح');
+    }
+
+    function switchAdminTab(tabName) {
+      pendingAdminTab = tabName;
+      ['pricing', 'portfolio', 'tracker', 'settings'].forEach(t => {
+        const btn = document.getElementById(`admTabBtn-${t}`);
+        const content = document.getElementById(`admTabContent-${t}`);
+        if (t === tabName) {
+          btn.className = 'adm-tab-btn px-4 py-2.5 rounded-t-2xl font-black text-xs sm:text-sm gold-gradient-btn flex items-center gap-2';
+          content.classList.remove('hidden');
+        } else {
+          btn.className = 'adm-tab-btn px-4 py-2.5 rounded-t-2xl font-bold text-xs sm:text-sm bg-navy-800 text-gray-300 hover:text-white flex items-center gap-2';
+          content.classList.add('hidden');
+        }
+      });
+    }
+
+    function updateAdminCountersAndForms() {
+      // Counters
+      const projCount = siteData.portfolio.length;
+      const cliCount = Object.keys(siteData.tracker).length;
+      const bookCount = siteData.bookings.length;
+
+      document.getElementById('admCountProjects').textContent = projCount;
+      document.getElementById('admCountClients').textContent = cliCount;
+      document.getElementById('admCountBookings').textContent = bookCount;
+      document.getElementById('navBookingBadge').textContent = bookCount;
+
+      // Tab 1: Pricing Inputs
+      document.getElementById('admPriceEcon').value = siteData.pricing.economy;
+      document.getElementById('admPriceSuper').value = siteData.pricing.superlux;
+      document.getElementById('admPriceVip').value = siteData.pricing.vip;
+      document.getElementById('admCondRedbrick').value = siteData.pricing.condRedbrick;
+      document.getElementById('admCondSemi').value = siteData.pricing.condSemi;
+      document.getElementById('admCondRenov').value = siteData.pricing.condRenov;
+
+      // Tab 2: Admin Projects List
+      renderAdminProjectsList();
+
+      // Tab 3: Admin Client Tracker List
+      renderAdminClientsList();
+
+      // Tab 4: Bookings & Settings
+      renderAdminBookingsList();
+      document.getElementById('admSettingPhone').value = siteData.settings.phone;
+      document.getElementById('admSettingPassword').value = siteData.settings.adminPass;
+    }
+
+    // --- TAB 1 LOGIC: SAVE PRICING ---
+    function saveAdminPricing() {
+      siteData.pricing.economy = Math.max(500, parseInt(document.getElementById('admPriceEcon').value, 10) || 2550);
+      siteData.pricing.superlux = Math.max(500, parseInt(document.getElementById('admPriceSuper').value, 10) || 3250);
+      siteData.pricing.vip = Math.max(500, parseInt(document.getElementById('admPriceVip').value, 10) || 4400);
+      siteData.pricing.condRedbrick = Math.max(50, parseInt(document.getElementById('admCondRedbrick').value, 10) || 100);
+      siteData.pricing.condSemi = Math.max(50, parseInt(document.getElementById('admCondSemi').value, 10) || 84);
+      siteData.pricing.condRenov = Math.max(50, parseInt(document.getElementById('admCondRenov').value, 10) || 112);
+
+      saveSiteData();
+      showToast('تم حفظ أسعار المتر وتحديث حاسبة التشطيب في الموقع فوراً!');
+    }
+
+    // --- TAB 2 LOGIC: PORTFOLIO CRUD ---
+    function renderAdminProjectsList() {
+      const container = document.getElementById('admProjectsListContainer');
+      const catNames = {
+        living: 'شقق وغرف معيشة',
+        bedroom: 'فيلات وغرف نوم',
+        kitchen: 'مطابخ وحمامات',
+        office: 'واجهات ومكاتب'
+      };
+      if (siteData.portfolio.length === 0) {
+        container.innerHTML = `<div class="p-6 rounded-2xl bg-navy-950 text-center text-xs text-gray-400">لا توجد مشاريع حالياً. أضف مشروعاً جديداً من النموذج المجاور.</div>`;
+        return;
+      }
+      container.innerHTML = siteData.portfolio.map(item => `
+        <div class="p-4 rounded-2xl bg-navy-950 border border-white/10 hover:border-gold-400/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 transition">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="px-2 py-0.5 rounded bg-olive-500/20 text-olive-400 text-[10px] font-extrabold">${catNames[item.cat] || 'مشروع'}</span>
+              <span class="text-xs text-gold-300 font-bold">${item.pkg}</span>
+              <span class="text-[11px] text-gray-400">(${item.area} | ${item.duration})</span>
+            </div>
+            <h4 class="text-sm font-black text-white">${item.title}</h4>
+            <p class="text-xs text-gray-400 line-clamp-1">${item.desc}</p>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <button onclick="editAdminProject(${item.id})" class="px-3 py-1.5 rounded-xl bg-gold-400/15 hover:bg-gold-400 text-gold-200 hover:text-navy-950 border border-gold-400/40 text-xs font-bold transition">
+              <i class="fa-solid fa-pen ml-1"></i>تعديل
+            </button>
+            <button onclick="deleteAdminProject(${item.id})" class="px-3 py-1.5 rounded-xl bg-red-500/15 hover:bg-red-500 text-red-300 hover:text-white border border-red-400/30 text-xs font-bold transition">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function saveAdminProject(e) {
+      e.preventDefault();
+      const editId = document.getElementById('admProjEditId').value;
+      const projObj = {
+        id: editId ? Number(editId) : Date.now(),
+        title: document.getElementById('admProjTitle').value.trim(),
+        cat: document.getElementById('admProjCat').value,
+        pkg: document.getElementById('admProjPkg').value.trim(),
+        area: document.getElementById('admProjArea').value.trim(),
+        duration: document.getElementById('admProjDuration').value.trim(),
+        theme: Number(document.getElementById('admProjTheme').value) || 1,
+        customImg: document.getElementById('admProjCustomImg').value.trim(),
+        desc: document.getElementById('admProjDesc').value.trim(),
+        isBefore: false
+      };
+
+      if (editId) {
+        const idx = siteData.portfolio.findIndex(p => p.id === Number(editId));
+        if (idx > -1) siteData.portfolio[idx] = projObj;
+        showToast('تم تحديث بيانات المشروع بنجاح');
+      } else {
+        siteData.portfolio.unshift(projObj);
+        showToast('تمت إضافة المشروع الجديد إلى معرض الأعمال بنجاح');
+      }
+
+      resetAdminProjectForm();
+      saveSiteData();
+    }
+
+    function editAdminProject(id) {
+      const item = siteData.portfolio.find(p => p.id === id);
+      if (!item) return;
+      document.getElementById('admProjFormTitle').innerHTML = `<i class="fa-solid fa-pen-to-square ml-1"></i>تعديل المشروع الحالي`;
+      document.getElementById('admProjEditId').value = item.id;
+      document.getElementById('admProjTitle').value = item.title;
+      document.getElementById('admProjCat').value = item.cat;
+      document.getElementById('admProjPkg').value = item.pkg;
+      document.getElementById('admProjArea').value = item.area;
+      document.getElementById('admProjDuration').value = item.duration;
+      document.getElementById('admProjTheme').value = item.theme || 1;
+      document.getElementById('admProjCustomImg').value = item.customImg || '';
+      document.getElementById('admProjDesc').value = item.desc;
+    }
+
+    function deleteAdminProject(id) {
+      siteData.portfolio = siteData.portfolio.filter(p => p.id !== id);
+      saveSiteData();
+      showToast('تم حذف المشروع من المعرض');
+    }
+
+    function resetAdminProjectForm() {
+      document.getElementById('admProjFormTitle').innerHTML = `<i class="fa-solid fa-plus-circle ml-1"></i>إضافة مشروع جديد للمعرض`;
+      document.getElementById('admProjEditId').value = '';
+      document.getElementById('admProjectForm').reset();
+    }
+
+    // --- TAB 3 LOGIC: CLIENT TRACKER MANAGEMENT ---
+    function generateRandomClientCode() {
+      const randomNum = Math.floor(400 + Math.random() * 500);
+      document.getElementById('admNewCliCode').value = `EBD-${randomNum}`;
+    }
+
+    function saveNewClientTracker(e) {
+      e.preventDefault();
+      const code = document.getElementById('admNewCliCode').value.trim().toUpperCase();
+      const pct = Math.min(100, Math.max(0, parseInt(document.getElementById('admNewCliPct').value, 10) || 0));
+      const client = document.getElementById('admNewCliName').value.trim();
+      const phone = document.getElementById('admNewCliPhone').value.trim();
+      const unit = document.getElementById('admNewCliUnit').value.trim();
+      const pkg = document.getElementById('admNewCliPkg').value.trim() || 'باقة سوبر لوكس';
+      const nextInspection = document.getElementById('admNewCliDate').value.trim() || 'يحدد قريباً مع أبو إياد';
+      const note = document.getElementById('admNewCliNote').value.trim();
+
+      siteData.tracker[code] = {
+        code,
+        client,
+        phone,
+        unit,
+        pkg,
+        overall: pct,
+        nextInspection,
+        note,
+        phases: computePhasesFromOverall(pct)
+      };
+
+      activeTrackerCode = code;
+      document.getElementById('admClientForm').reset();
+      generateRandomClientCode();
+      saveSiteData();
+      showToast(`تم تفعيل كود العميل ${code} في بوابة متابعة المشاريع!`);
+    }
+
+    function renderAdminClientsList() {
+      const container = document.getElementById('admClientsListContainer');
+      const codes = Object.keys(siteData.tracker);
+      if (codes.length === 0) {
+        container.innerHTML = `<div class="p-6 rounded-2xl bg-navy-950 text-center text-xs text-gray-400">لا توجد أكواد عملاء حالياً.</div>`;
+        return;
+      }
+
+      container.innerHTML = codes.map(code => {
+        const c = siteData.tracker[code];
+        return `
+          <div class="p-4 rounded-2xl bg-navy-950 border border-gold-400/40 space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-white/10 pb-2.5">
+              <div class="flex items-center gap-2">
+                <span class="px-3 py-1 rounded-xl olive-gradient-btn font-black text-xs">${c.code}</span>
+                <div>
+                  <h4 class="text-sm font-black text-white">${c.client}</h4>
+                  <span class="text-[11px] text-gray-400">${c.unit} (${c.pkg})</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="sendClientUpdateWhatsApp('${c.code}')" class="px-3 py-1.5 rounded-xl bg-olive-500/20 hover:bg-olive-500 text-olive-400 hover:text-navy-950 border border-olive-400/40 text-xs font-extrabold transition flex items-center gap-1">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span>إرسال التحديث للعميل</span>
+                </button>
+                <button onclick="deleteAdminClientCode('${c.code}')" class="px-2.5 py-1.5 rounded-xl bg-red-500/15 hover:bg-red-500 text-red-300 hover:text-white text-xs transition" title="حذف الكود">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Interactive Progress Slider -->
+            <div class="bg-navy-900 p-3 rounded-xl border border-white/10 space-y-1.5">
+              <div class="flex items-center justify-between text-xs font-bold">
+                <span class="text-gold-200">نسبة الإنجاز الإجمالية (اسحب للتعديل الفوري):</span>
+                <span id="admCliPctLabel-${c.code}" class="text-base font-black text-olive-400">${c.overall}%</span>
+              </div>
+              <input type="range" min="0" max="100" value="${c.overall}"
+                     oninput="liveUpdateClientSlider('${c.code}', this.value)"
+                     onchange="commitClientProgress('${c.code}', this.value)"
+                     class="w-full" />
+            </div>
+
+            <!-- Editable Date & Supervisor Note -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+              <div>
+                <label class="text-[11px] text-gray-400 block mb-1">موعد المعاينة / التسليم:</label>
+                <input id="admCliDate-${c.code}" type="text" value="${c.nextInspection}"
+                       class="w-full px-3 py-1.5 rounded-xl bg-navy-900 border border-white/15 text-xs text-white" />
+              </div>
+              <div class="sm:col-span-2">
+                <label class="text-[11px] text-gray-400 block mb-1">ملاحظات الإشراف (إدارة / أبو إياد):</label>
+                <div class="flex gap-2">
+                  <input id="admCliNote-${c.code}" type="text" value="${c.note}"
+                         class="flex-1 px-3 py-1.5 rounded-xl bg-navy-900 border border-white/15 text-xs text-white" />
+                  <button onclick="saveClientDetailsFields('${c.code}')" class="px-3.5 py-1.5 rounded-xl gold-gradient-btn font-black text-xs shrink-0">
+                    حفظ
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function liveUpdateClientSlider(code, val) {
+      const lbl = document.getElementById(`admCliPctLabel-${code}`);
+      if (lbl) lbl.textContent = `${val}%`;
+    }
+
+    function commitClientProgress(code, val) {
+      if (!siteData.tracker[code]) return;
+      const pct = parseInt(val, 10) || 0;
+      siteData.tracker[code].overall = pct;
+      siteData.tracker[code].phases = computePhasesFromOverall(pct);
+      activeTrackerCode = code;
+      saveSiteData();
+      showToast(`تم تحديث نسبة إنجاز الكود ${code} إلى ${pct}%`);
+    }
+
+    function saveClientDetailsFields(code) {
+      if (!siteData.tracker[code]) return;
+      siteData.tracker[code].nextInspection = document.getElementById(`admCliDate-${code}`).value.trim();
+      siteData.tracker[code].note = document.getElementById(`admCliNote-${code}`).value.trim();
+      activeTrackerCode = code;
+      saveSiteData();
+      showToast(`تم حفظ ملاحظات الإشراف للكود ${code}`);
+    }
+
+    function deleteAdminClientCode(code) {
+      delete siteData.tracker[code];
+      const remaining = Object.keys(siteData.tracker);
+      activeTrackerCode = remaining.length > 0 ? remaining[0] : '';
+      saveSiteData();
+      showToast(`تم حذف الكود ${code}`);
+    }
+
+    function sendClientUpdateWhatsApp(code) {
+      const c = siteData.tracker[code];
+      if (!c) return;
+      const msg = `السلام عليكم ${c.client}،
+تحديث جديد من «مكتب إبداع للتشطيبات والديكور - إدارة / أبو إياد» بخصوص وحدتكم (${c.unit}) - كود المتابعة (${c.code}):
+• نسبة الإنجاز الحالية: ${c.overall}%
+• موعد المعاينة / التسليم: ${c.nextInspection}
+• ملاحظات الإشراف الهندسي: ${c.note}
+نسعد دائماً بخدمتكم (01090408223).`;
+      const targetPhone = c.phone ? ('2' + c.phone.replace(/\D/g, '')) : siteData.settings.waNumber;
+      window.open(`https://wa.me/${targetPhone}?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+
+    // --- TAB 4 LOGIC: BOOKINGS & SYSTEM SETTINGS ---
+    function renderAdminBookingsList() {
+      const container = document.getElementById('admBookingsListContainer');
+      if (!siteData.bookings || siteData.bookings.length === 0) {
+        container.innerHTML = `<div class="p-4 rounded-xl bg-navy-900 text-center text-xs text-gray-400">لا توجد طلبات معاينة مسجلة حالياً.</div>`;
+        return;
+      }
+      container.innerHTML = siteData.bookings.map(b => `
+        <div class="p-3.5 rounded-xl bg-navy-900 border border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs">
+          <div class="space-y-0.5">
+            <div class="flex items-center gap-2">
+              <strong class="text-white font-black">${b.name}</strong>
+              <span dir="ltr" class="text-gold-300 font-bold">${b.phone}</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-bold ${b.status === 'جديد' ? 'bg-olive-500/20 text-olive-400' : 'bg-sky-500/20 text-sky-300'}">${b.status}</span>
+            </div>
+            <p class="text-gray-300">${b.loc} — ${b.unit} | الموعد: <b>${b.date}</b></p>
+            <p class="text-gray-400 text-[11px]">${b.notes}</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="toggleBookingStatus(${b.id})" class="px-2.5 py-1.5 rounded-lg bg-navy-800 hover:bg-navy-700 text-gray-200 border border-white/10 font-bold">
+              تغيير الحالة
+            </button>
+            <a href="https://wa.me/2${b.phone.replace(/\D/g, '')}?text=${encodeURIComponent('أهلاً بك ' + b.name + '، معك مكتب إبداع للتشطيبات والديكور (إدارة / أبو إياد) لتأكيد موعد المعاينة المجانية لوحدتكم في ' + b.loc)}"
+               target="_blank" rel="noopener noreferrer"
+               class="px-3 py-1.5 rounded-lg olive-gradient-btn font-black">
+              <i class="fa-brands fa-whatsapp ml-1"></i>رد واتساب
+            </a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function toggleBookingStatus(id) {
+      const b = siteData.bookings.find(x => x.id === id);
+      if (b) {
+        b.status = b.status === 'جديد' ? 'تم التواصل' : 'جديد';
+        saveSiteData();
+      }
+    }
+
+    function clearAllBookings() {
+      siteData.bookings = [];
+      saveSiteData();
+      showToast('تم مسح سجل طلبات المعاينة');
+    }
+
+    function saveAdminSystemSettings() {
+      const newPhone = document.getElementById('admSettingPhone').value.trim() || '01090408223';
+      const newPass = document.getElementById('admSettingPassword').value.trim() || '1234';
+      siteData.settings.phone = newPhone;
+      siteData.settings.adminPass = newPass;
+      saveSiteData();
+      showToast('تم حفظ رقم الهاتف وكلمة مرور الإدارة بنجاح');
+    }
+
+    function exportSiteDataJson() {
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(siteData, null, 2));
+      const dlAnchor = document.createElement('a');
+      dlAnchor.setAttribute("href", dataStr);
+      dlAnchor.setAttribute("download", "ebda3-office-backup.json");
+      document.body.appendChild(dlAnchor);
+      dlAnchor.click();
+      dlAnchor.remove();
+      showToast('تم تحميل ملف النسخة الاحتياطية بنجاح');
+    }
+
+    function importSiteDataJson(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const imported = JSON.parse(e.target.result);
+          if (imported && imported.pricing && imported.portfolio) {
+            siteData = imported;
+            saveSiteData();
+            showToast('تم استيراد النسخة الاحتياطية وتحديث الموقع بنجاح!');
+          } else {
+            showToast('ملف غير صالح!');
+          }
+        } catch (err) {
+          showToast('حدث خطأ أثناء قراءة الملف');
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function resetAllSiteDataToDefaults() {
+      localStorage.removeItem(STORAGE_KEY);
+      siteData = getDefaultSiteData();
+      activeTrackerCode = 'EBD-101';
+      saveSiteData();
+      showToast('تمت استعادة الضبط الافتراضي للموقع بالكامل');
+    }
+
+    // =====================================================
+    // HERO QUICK PREVIEW & SIMULATOR FUNCTIONS
+    // =====================================================
+    function quickHeroPreview(wallHex, lightType) {
+      document.getElementById('heroWallRect').setAttribute('fill', wallHex);
+      const stop1 = document.getElementById('heroLedStop1');
+      const line1 = document.getElementById('heroCeilingLedLine');
+      if (lightType === 'daylight') {
+        stop1.setAttribute('stop-color', '#BAE6FD');
+        line1.setAttribute('stroke', '#38BDF8');
+      } else {
+        stop1.setAttribute('stop-color', '#FFCF70');
+        line1.setAttribute('stroke', '#FFBE42');
+      }
+      showToast('تم تحديث المعاينة الفورية للغرفة');
+    }
+
+    function setSimWall(hex, name) {
+      document.getElementById('simWallRect').setAttribute('fill', hex);
+      simState.wallName = name;
+      updateSimSummary();
+    }
+
+    function setSimWood(shelfHex, claddingHex, floorHex, name) {
+      document.getElementById('simShelfUnit').setAttribute('fill', shelfHex);
+      document.getElementById('simWoodCladding').setAttribute('fill', claddingHex);
+      document.getElementById('simFloorPoly').setAttribute('fill', floorHex);
+      simState.woodName = name;
+      updateSimSummary();
+    }
+
+    function setSimLighting(mode, name) {
+      const stop1 = document.getElementById('simLedStop1');
+      const stop2 = document.getElementById('simLedStop2');
+      const ceilLine = document.getElementById('simCeilingLedLine');
+      const sofaLine = document.getElementById('simSofaLedLine');
+      const lamp = document.getElementById('simLampShade');
+
+      if (mode === 'warm3000') {
+        stop1.setAttribute('stop-color', '#FFCF70');
+        stop2.setAttribute('stop-color', '#FFEBB8');
+        ceilLine.setAttribute('stroke', '#FFBE42');
+        sofaLine.setAttribute('stroke', '#FFD27D');
+        lamp.setAttribute('fill', '#FFFBEB');
+      } else if (mode === 'daylight4000') {
+        stop1.setAttribute('stop-color', '#FEF08A');
+        stop2.setAttribute('stop-color', '#FEF9C3');
+        ceilLine.setAttribute('stroke', '#FDE047');
+        sofaLine.setAttribute('stroke', '#FEF08A');
+        lamp.setAttribute('fill', '#FFFFFF');
+      } else if (mode === 'cool6000') {
+        stop1.setAttribute('stop-color', '#BAE6FD');
+        stop2.setAttribute('stop-color', '#E0F2FE');
+        ceilLine.setAttribute('stroke', '#38BDF8');
+        sofaLine.setAttribute('stroke', '#7DD3FC');
+        lamp.setAttribute('fill', '#F0F9FF');
+      } else if (mode === 'sunset') {
+        stop1.setAttribute('stop-color', '#FB923C');
+        stop2.setAttribute('stop-color', '#FED7AA');
+        ceilLine.setAttribute('stroke', '#F97316');
+        sofaLine.setAttribute('stroke', '#FDBA74');
+        lamp.setAttribute('fill', '#FFEDD5');
+      }
+      simState.lightName = name;
+      updateSimSummary();
+    }
+
+    function resetSimulator() {
+      setSimWall('#F3EEE6', 'أوف وايت دافئ');
+      setSimWood('#C5B097', '#B89772', '#C8B094', 'أرو طبيعي');
+      setSimLighting('warm3000', 'إضاءة وورم 3000K');
+      showToast('تمت استعادة الإعدادات الافتراضية للغرفة');
+    }
+
+    function updateSimSummary() {
+      document.getElementById('simStatusSummary').textContent =
+        `${simState.wallName} | ${simState.woodName} | ${simState.lightName}`;
+    }
+
+    function sendSimulatorChoiceToWhatsApp() {
+      const msg = `السلام عليكم مكتب إبداع للتشطيبات والديكور (إدارة / أبو إياد)،
+قمت بتنسيق ألوان الغرفة عبر محاكي الديكور في الموقع:
+• لون الدهان المختار: ${simState.wallName}
+• درجة الأخشاب والباركيه: ${simState.woodName}
+• نظام الإضاءة المخفية: ${simState.lightName}
+أرغب في تنفيذ هذا التنسيق في وحدتي.`;
+      window.open(`https://wa.me/${siteData.settings.waNumber}?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+
+    // =====================================================
+    // RENDER SERVICES
+    // =====================================================
+    function renderServices() {
+      const container = document.getElementById('servicesGridContainer');
+      container.innerHTML = servicesList.map(s => `
+        <div class="rounded-3xl bg-navy-800/90 border border-gold-400/35 hover:border-gold-400 p-6 flex flex-col justify-between transition shadow-xl group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl bg-navy-900 border border-gold-400/50 flex items-center justify-center text-olive-400 text-xl group-hover:scale-110 transition">
+                <i class="${s.icon}"></i>
+              </div>
+              <span class="text-[11px] px-3 py-1 rounded-full bg-gold-400/15 text-gold-200 border border-gold-400/30 font-bold">${s.badge}</span>
+            </div>
+            <h3 class="text-lg font-black text-white group-hover:text-olive-400 transition">${s.title}</h3>
+            <p class="text-xs sm:text-sm text-gray-300 leading-relaxed">${s.desc}</p>
+            <ul class="space-y-1.5 pt-2 border-t border-white/10 text-xs text-gray-200">
+              ${s.features.map(f => `<li class="flex items-center gap-2"><i class="fa-solid fa-check text-olive-400 text-[10px]"></i><span>${f}</span></li>`).join('')}
+            </ul>
+          </div>
+          <div class="pt-5 mt-5 border-t border-white/10 flex items-center justify-between gap-2">
+            <a href="https://wa.me/${siteData.settings.waNumber}?text=${encodeURIComponent('السلام عليكم مكتب إبداع (أبو إياد)، أرغب في الاستفسار عن خدمة: ' + s.title)}"
+               target="_blank" rel="noopener noreferrer"
+               class="flex-1 py-2.5 px-3 rounded-xl bg-olive-500/20 hover:bg-olive-500 text-olive-400 hover:text-navy-950 border border-olive-400/40 text-xs font-extrabold text-center transition">
+              <i class="fa-brands fa-whatsapp ml-1"></i>اطلب الخدمة عبر واتساب
+            </a>
+            <a href="#calculator" class="py-2.5 px-3 rounded-xl bg-navy-900 hover:bg-navy-950 text-gold-200 border border-gold-400/30 text-xs font-bold">
+              احسب التكلفة
+            </a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // =====================================================
+    // SMART COST CALCULATOR LOGIC (READS FROM ADMIN STATE)
+    // =====================================================
+    function setCalcUnit(unit) {
+      calcState.unit = unit;
+      ['apartment', 'villa', 'duplex', 'office'].forEach(u => {
+        const btn = document.getElementById(`unitBtn-${u}`);
+        if (u === unit) {
+          btn.className = 'calc-unit-btn p-3 rounded-xl border-2 border-olive-400 bg-navy-900 text-white text-xs font-extrabold flex flex-col items-center gap-1.5 transition';
+        } else {
+          btn.className = 'calc-unit-btn p-3 rounded-xl border border-white/15 bg-navy-900/60 text-gray-300 text-xs font-bold flex flex-col items-center gap-1.5 transition';
+        }
+      });
+      calculateQuotation();
+    }
+
+    function syncCalcAreaSlider(val) {
+      calcState.area = parseInt(val, 10) || 150;
+      document.getElementById('calcAreaNum').value = calcState.area;
+      calculateQuotation();
+    }
+
+    function syncCalcAreaInput(val) {
+      let n = parseInt(val, 10);
+      if (isNaN(n) || n < 50) n = 50;
+      if (n > 600) n = 600;
+      calcState.area = n;
+      document.getElementById('calcAreaRange').value = n;
+      calculateQuotation();
+    }
+
+    function setCalcCond(cond) {
+      calcState.cond = cond;
+      ['redbrick', 'semi', 'renovation'].forEach(c => {
+        const btn = document.getElementById(`condBtn-${c}`);
+        if (c === cond) {
+          btn.className = 'p-3 rounded-xl border-2 border-olive-400 bg-navy-900 text-white text-xs font-extrabold transition';
+        } else {
+          btn.className = 'p-3 rounded-xl border border-white/15 bg-navy-900/60 text-gray-300 text-xs font-bold transition';
+        }
+      });
+      calculateQuotation();
+    }
+
+    function setCalcTier(tier) {
+      calcState.tier = tier;
+      ['economy', 'superlux', 'vip'].forEach(t => {
+        const card = document.getElementById(`tierCard-${t}`);
+        if (t === tier) {
+          card.className = 'cursor-pointer p-3.5 rounded-2xl border-2 border-olive-400 bg-navy-900 flex items-center justify-between transition shadow-lg';
+        } else {
+          card.className = 'cursor-pointer p-3.5 rounded-2xl border border-white/15 bg-navy-900/60 hover:border-gold-400/50 flex items-center justify-between transition';
+        }
+      });
+      calculateQuotation();
+    }
+
+    function calculateQuotation() {
+      const p = siteData.pricing;
+      const baseRates = {
+        economy: Number(p.economy) || 2550,
+        superlux: Number(p.superlux) || 3250,
+        vip: Number(p.vip) || 4400
+      };
+      const condMult = {
+        redbrick: (Number(p.condRedbrick) || 100) / 100,
+        semi: (Number(p.condSemi) || 84) / 100,
+        renovation: (Number(p.condRenov) || 112) / 100
+      };
+      const unitMult = { apartment: 1.0, villa: 1.08, duplex: 1.05, office: 0.92 };
+
+      const meterRate = Math.round(baseRates[calcState.tier] * condMult[calcState.cond] * unitMult[calcState.unit]);
+      const total = meterRate * calcState.area;
+      const minCost = Math.round((total * 0.95) / 1000) * 1000;
+      const maxCost = Math.round((total * 1.05) / 1000) * 1000;
+
+      let minWeeks = Math.max(5, Math.round(calcState.area / 18));
+      if (calcState.cond === 'semi') minWeeks = Math.max(4, minWeeks - 2);
+      const maxWeeks = minWeeks + 2;
+
+      const unitLabels = { apartment: 'شقة سكنية', villa: 'فيلا مستقلة', duplex: 'دوبلكس', office: 'مكتب إداري' };
+      const tierLabels = { economy: 'الباقة الاقتصادية', superlux: 'سوبر لوكس', vip: 'باقة إبداع VIP' };
+
+      document.getElementById('quoteSummaryBadge').textContent =
+        `${unitLabels[calcState.unit]} ${calcState.area} م² - ${tierLabels[calcState.tier]}`;
+      document.getElementById('quoteTotalCost').textContent = `${total.toLocaleString('ar-EG')} ج.م`;
+      document.getElementById('quoteRangeCost').textContent =
+        `النطاق التقريبي: ${minCost.toLocaleString('ar-EG')} - ${maxCost.toLocaleString('ar-EG')} ج.م`;
+      document.getElementById('quoteMeterRate').textContent = `${meterRate.toLocaleString('ar-EG')} ج.م / م²`;
+      document.getElementById('quoteDuration').textContent = `${minWeeks} - ${maxWeeks} أسابيع`;
+
+      const breakdownItems = [
+        { name: 'أعمال الكهرباء والسباكة والعزل', pct: 26 },
+        { name: 'المحارة والجبس بورد وبيوت النور', pct: 20 },
+        { name: 'السيراميك والبورسلين والأرضيات', pct: 25 },
+        { name: 'الدهانات والديكورات الجدارية', pct: 16 },
+        { name: 'الأبواب والألوميتال والتشطيب النهائي', pct: 13 }
+      ];
+
+      const tbody = document.getElementById('quoteBreakdownTableBody');
+      tbody.innerHTML = breakdownItems.map(item => {
+        const itemCost = Math.round((total * item.pct) / 100);
+        return `
+          <tr>
+            <td class="py-2.5 px-3 font-semibold text-white">${item.name}</td>
+            <td class="py-2.5 px-3 text-center text-gold-300 font-bold">${item.pct}%</td>
+            <td class="py-2.5 px-3 text-left font-black text-olive-400">${itemCost.toLocaleString('ar-EG')} ج.م</td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function sendQuotationWhatsApp() {
+      const unitLabels = { apartment: 'شقة سكنية', villa: 'فيلا مستقلة', duplex: 'دوبلكس', office: 'مكتب إداري' };
+      const condLabels = { redbrick: 'على الطوب الأحمر', semi: 'نصف تشطيب', renovation: 'تجديد شامل' };
+      const tierLabels = { economy: 'الباقة الاقتصادية', superlux: 'باقة سوبر لوكس', vip: 'باقة إبداع VIP' };
+      const total = document.getElementById('quoteTotalCost').textContent;
+
+      const msg = `السلام عليكم مكتب إبداع للتشطيبات والديكور (إدارة / أبو إياد)،
+قمت بحساب مقايسة التشطيب عبر الموقع الإلكتروني:
+• نوع الوحدة: ${unitLabels[calcState.unit]}
+• المساحة: ${calcState.area} م²
+• حالة الوحدة: ${condLabels[calcState.cond]}
+• الباقة المختارة: ${tierLabels[calcState.tier]}
+• التكلفة التقديرية: ${total}
+أرغب في تحديد موعد معاينة على الطبيعة.`;
+      window.open(`https://wa.me/${siteData.settings.waNumber}?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+
+    // =====================================================
+    // PORTFOLIO BEFORE & AFTER GALLERY (DYNAMIC)
+    // =====================================================
+    function filterPortfolioItems(cat) {
+      currentPortfolioFilter = cat;
+      document.querySelectorAll('.port-filter-btn').forEach(btn => {
+        if (btn.dataset.cat === cat) {
+          btn.className = 'port-filter-btn px-4 py-2 rounded-xl text-xs font-black olive-gradient-btn shadow';
+        } else {
+          btn.className = 'port-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-navy-900 text-gray-300 border border-white/10 hover:text-white';
+        }
+      });
+      renderPortfolioGrid(cat);
+    }
+
+    function renderPortfolioGrid(cat) {
+      const container = document.getElementById('portfolioGridContainer');
+      const list = cat === 'all' ? siteData.portfolio : siteData.portfolio.filter(i => i.cat === cat);
+
+      if (list.length === 0) {
+        container.innerHTML = `<div class="col-span-2 p-8 rounded-3xl bg-navy-900 border border-white/10 text-center text-sm text-gray-400">لا توجد مشاريع في هذا التصنيف حالياً. يمكنك إضافة مشاريع جديدة من لوحة الإدارة.</div>`;
+        return;
+      }
+
+      container.innerHTML = list.map(item => `
+        <div class="rounded-3xl bg-navy-900 border border-gold-400/40 overflow-hidden shadow-xl flex flex-col justify-between">
+          <div class="relative h-56 bg-navy-950 overflow-hidden">
+            ${getPortfolioVisualContent(item)}
+            <div class="absolute top-3 inset-x-3 flex items-center justify-between">
+              <span class="px-3 py-1 rounded-xl text-xs font-black ${item.isBefore ? 'bg-amber-700 text-white' : 'bg-navy-950/90 text-olive-400 border border-olive-400/50'}">
+                ${item.isBefore ? 'قبل التشطيب — على الطوب الأحمر' : 'بعد التشطيب — تسليم مفتاح'}
+              </span>
+              <button onclick="togglePortfolioState(${item.id})" class="px-3 py-1.5 rounded-xl gold-gradient-btn text-xs font-black shadow-lg hover:scale-105 transition flex items-center gap-1.5">
+                <i class="fa-solid fa-repeat"></i>
+                <span>${item.isBefore ? 'شاهد بعد التشطيب' : 'شاهد قبل التشطيب'}</span>
+              </button>
+            </div>
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-transparent px-4 py-2.5 flex items-center justify-between text-xs">
+              <span class="text-gold-200 font-bold">المساحة: ${item.area}</span>
+              <span class="text-olive-400 font-extrabold">${item.pkg}</span>
+            </div>
+          </div>
+
+          <div class="p-5 space-y-3">
+            <h3 class="text-base font-black text-white">${item.title}</h3>
+            <p class="text-xs text-gray-300 leading-relaxed">${item.desc}</p>
+            <div class="pt-3 border-t border-white/10 flex items-center justify-between">
+              <span class="text-xs text-gray-400"><i class="fa-regular fa-clock text-gold-400 ml-1"></i>مدة التنفيذ: <b class="text-white">${item.duration}</b></span>
+              <a href="https://wa.me/${siteData.settings.waNumber}?text=${encodeURIComponent('السلام عليكم أبو إياد، أعجبني مشروع (' + item.title + ') وأرغب في تشطيب مماثل.')}"
+                 target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-1.5 rounded-xl bg-olive-500/20 hover:bg-olive-500 text-olive-400 hover:text-navy-950 border border-olive-400/40 text-xs font-extrabold transition">
+                اطلب تشطيب مماثل
+              </a>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function togglePortfolioState(id) {
+      const target = siteData.portfolio.find(i => i.id === id);
+      if (target) {
+        target.isBefore = !target.isBefore;
+        renderPortfolioGrid(currentPortfolioFilter);
+      }
+    }
+
+    function getPortfolioVisualContent(item) {
+      if (item.isBefore) {
+        return `
+          <svg viewBox="0 0 500 220" class="w-full h-full block">
+            <rect width="500" height="220" fill="#3B2F2F"/>
+            <g stroke="#2A1F1D" stroke-width="1.5" fill="#8C3B2B">
+              <rect x="25" y="20" width="450" height="145" fill="#7C3224"/>
+              <line x1="25" y1="50" x2="475" y2="50"/><line x1="25" y1="80" x2="475" y2="80"/>
+              <line x1="25" y1="110" x2="475" y2="110"/><line x1="25" y1="140" x2="475" y2="140"/>
+              <line x1="110" y1="20" x2="110" y2="165"/><line x1="210" y1="20" x2="210" y2="165"/>
+              <line x1="310" y1="20" x2="310" y2="165"/><line x1="410" y1="20" x2="410" y2="165"/>
+            </g>
+            <rect x="160" y="40" width="180" height="100" fill="#6B7280" opacity="0.88"/>
+            <path d="M100 20 L100 105 L185 105" fill="none" stroke="#EAB308" stroke-width="3.5" stroke-dasharray="5,3"/>
+            <rect x="0" y="165" width="500" height="55" fill="#57534E"/>
+            <text x="250" y="95" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="bold">مرحلة الطوب الأحمر والتأسيس الهندسي</text>
+          </svg>
+        `;
+      }
+      if (item.customImg) {
+        return `<img src="${item.customImg}" alt="${item.title}" class="w-full h-full object-cover" onerror="this.style.display='none'" />`;
+      }
+      const wallColors = { 1: '#F3EEE6', 2: '#132A4F', 3: '#E6CCB2', 4: '#CBD5E1' };
+      const bgHex = wallColors[item.theme] || '#F3EEE6';
+      return `
+        <svg viewBox="0 0 500 220" class="w-full h-full block">
+          <rect width="500" height="220" fill="${bgHex}"/>
+          <rect x="0" y="0" width="500" height="20" fill="#E6DEC8"/>
+          <line x1="120" y1="20" x2="500" y2="20" stroke="#FFBE42" stroke-width="5"/>
+          <rect x="0" y="20" width="130" height="155" fill="#C5B097"/>
+          <rect x="15" y="35" width="100" height="45" fill="#E5DDD3"/>
+          <rect x="15" y="92" width="100" height="55" fill="#E5DDD3"/>
+          <circle cx="365" cy="85" r="42" fill="#FFFBEB" stroke="#1E1B18" stroke-width="5"/>
+          <line x1="365" y1="43" x2="365" y2="127" stroke="#1E1B18" stroke-width="2.5"/>
+          <line x1="323" y1="85" x2="407" y2="85" stroke="#1E1B18" stroke-width="2.5"/>
+          <rect x="180" y="132" width="235" height="46" rx="8" fill="#D9CFC3" stroke="#B8A590" stroke-width="2"/>
+          <rect x="0" y="175" width="500" height="45" fill="#B89B7A"/>
+        </svg>
+      `;
+    }
+
+    // =====================================================
+    // CLIENT PROJECT TRACKER LOGIC (DYNAMIC)
+    // =====================================================
+    function renderTrackerButtonsAndView() {
+      const codes = Object.keys(siteData.tracker);
+      const btnContainer = document.getElementById('trackerCodesButtonsContainer');
+      if (codes.length === 0) {
+        btnContainer.innerHTML = `<span class="text-xs text-gray-400">لا توجد أكواد</span>`;
+        document.getElementById('trackerResultArea').innerHTML = '';
+        return;
+      }
+      if (!siteData.tracker[activeTrackerCode]) {
+        activeTrackerCode = codes[0];
+      }
+      document.getElementById('trackerInputCode').value = activeTrackerCode;
+
+      btnContainer.innerHTML = codes.map(code => `
+        <button onclick="selectTrackerCode('${code}')"
+                class="px-3.5 py-1.5 rounded-xl text-xs transition ${code === activeTrackerCode ? 'olive-gradient-btn font-black shadow' : 'bg-navy-900 text-gray-200 border border-gold-400/30 font-bold hover:border-gold-400'}">
+          ${code}
+        </button>
+      `).join('');
+
+      renderTrackerProject(activeTrackerCode);
+    }
+
+    function selectTrackerCode(code) {
+      if (!siteData.tracker[code]) return;
+      activeTrackerCode = code;
+      renderTrackerButtonsAndView();
+    }
+
+    function searchTrackerCode() {
+      const code = document.getElementById('trackerInputCode').value.trim().toUpperCase();
+      if (siteData.tracker[code]) {
+        selectTrackerCode(code);
+        showToast(`تم عرض تقرير المشروع ${code}`);
+      } else {
+        showToast('كود المشروع غير مسجل، اختر أحد الأكواد المتاحة أو أضفه من لوحة الإدارة');
+      }
+    }
+
+    function renderTrackerProject(code) {
+      const data = siteData.tracker[code];
+      if (!data) return;
+
+      const phases = data.phases || computePhasesFromOverall(data.overall);
+      const container = document.getElementById('trackerResultArea');
+      container.innerHTML = `
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-navy-950 p-5 rounded-2xl border border-gold-400/35">
+          <div>
+            <span class="text-xs text-gray-400 block">اسم العميل والوحدة:</span>
+            <strong class="text-base font-black text-white block mt-0.5">${data.client}</strong>
+            <span class="text-xs text-gold-200">${data.unit}</span>
+          </div>
+          <div>
+            <span class="text-xs text-gray-400 block">الباقة وموعد المعاينة / التسليم:</span>
+            <strong class="text-sm font-extrabold text-olive-400 block mt-0.5">${data.pkg}</strong>
+            <span class="text-xs text-gray-300">${data.nextInspection}</span>
+          </div>
+          <div class="flex flex-col justify-center md:items-end">
+            <span class="text-xs text-gray-400">إجمالي نسبة الإنجاز:</span>
+            <span class="text-3xl font-black text-olive-400">${data.overall}%</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          ${phases.map(p => `
+            <div class="p-4 rounded-2xl bg-navy-900 border border-white/10 space-y-2">
+              <div class="flex justify-between text-xs font-bold">
+                <span class="text-white">${p.name}</span>
+                <span class="${p.pct === 100 ? 'text-olive-400' : 'text-gold-300'}">${p.pct}%</span>
+              </div>
+              <div class="w-full h-2.5 bg-navy-950 rounded-full overflow-hidden">
+                <div class="h-full rounded-full olive-gradient-btn transition-all duration-500" style="width: ${p.pct}%"></div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+
+        <div class="p-4 rounded-2xl bg-navy-950 border border-olive-400/40 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-user-check text-olive-400 text-lg mt-1"></i>
+            <div class="text-xs space-y-1">
+              <strong class="text-gold-200 block">ملاحظات الإشراف الهندسي (إدارة / أبو إياد):</strong>
+              <p class="text-gray-200 leading-relaxed">${data.note}</p>
+            </div>
+          </div>
+          <button onclick="openAdminPanel('tracker')" class="px-3.5 py-2 rounded-xl bg-navy-800 hover:bg-navy-700 border border-gold-400/40 text-gold-200 text-xs font-bold shrink-0">
+            <i class="fa-solid fa-pen-to-square ml-1"></i>تعديل التقرير
+          </button>
+        </div>
+      `;
+    }
+
+    // =====================================================
+    // BOOKING FORM (SAVES TO ADMIN PANEL + WHATSAPP)
+    // =====================================================
+    function handleBookingSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('bookName').value.trim();
+      const phone = document.getElementById('bookPhone').value.trim();
+      const loc = document.getElementById('bookAreaLoc').value.trim();
+      const unit = document.getElementById('bookUnitDesc').value.trim() || 'غير محدد';
+      const date = document.getElementById('bookDate').value || 'في أقرب موعد';
+      const notes = document.getElementById('bookNotes').value.trim() || 'لا توجد ملاحظات';
+
+      // Save booking into Admin State
+      siteData.bookings.unshift({
+        id: Date.now(),
+        name,
+        phone,
+        loc,
+        unit,
+        date,
+        notes,
+        status: 'جديد'
+      });
+      saveSiteData();
+
+      showToast('تم حفظ طلب المعاينة في لوحة الإدارة وجاري فتح واتساب أبو إياد...');
+
+      const msg = `السلام عليكم مكتب إبداع للتشطيبات والديكور (إدارة / أبو إياد)،
+أرغب في حجز معاينة مجانية ورفع مقاسات لوحدتي:
+• الاسم: ${name}
+• رقم الهاتف: ${phone}
+• المنطقة / العنوان: ${loc}
+• نوع الوحدة والمساحة: ${unit}
+• الموعد المفضل للمعاينة: ${date}
+• ملاحظات: ${notes}`;
+
+      setTimeout(() => {
+        window.open(`https://wa.me/${siteData.settings.waNumber}?text=${encodeURIComponent(msg)}`, '_blank');
+      }, 600);
+    }
+
+    function copyOfficePhone() {
+      const phone = siteData.settings.phone || '01090408223';
+      const input = document.createElement('input');
+      input.value = phone;
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand('copy');
+      document.body.removeChild(input);
+      showToast(`تم نسخ رقم مكتب إبداع (أبو إياد): ${phone}`);
+    }
+
+    let toastTimeout = null;
+    function showToast(text) {
+      const box = document.getElementById('toastNotification');
+      const txt = document.getElementById('toastText');
+      txt.textContent = text;
+      box.classList.remove('hidden');
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        box.classList.add('hidden');
+      }, 3200);
+    }
+  </script>
+</body>
+</html>
